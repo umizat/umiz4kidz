@@ -30,3 +30,5 @@ Happy hacking!
 based on https://github.com/gitname/react-gh-pages
 
 npm run deploy
+
+see result on: https://umizat.github.io/umiz4kidz/
