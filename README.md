@@ -23,3 +23,7 @@ We suggest that you begin by typing:
   npm start
 
 Happy hacking!
+
+
+# depoly
+npm run deploy
