@@ -26,4 +26,7 @@ Happy hacking!
 
 
 # depoly
+
+based on https://github.com/gitname/react-gh-pages
+
 npm run deploy
