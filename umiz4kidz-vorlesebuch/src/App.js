@@ -7,8 +7,8 @@ import {
   Link,
 } from "react-router-dom";
 
-import DerGrueneApfel from './components/derGrueneApfel'
-import DGAPreview from './components/derGrueneApfel/1-Der gruene Apfel.jpeg'
+import DerGrueneApfel from './components/DerGrueneApfel/DerGrueneApfel'
+import DGAPreview from './components/DerGrueneApfel/1-Der gruene Apfel.jpeg'
 
 import Manatee from './components/Manatee/Manatee';
 import Narwhal from './components/Narwhal/Narwhal';
@@ -18,13 +18,21 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div>
+        <Router>
+          <Link to='/dga'>
+          <div>
           <section className="bookPreview" id="dga">
             <a href=''>
               <img src={DGAPreview} />
             </a>
           </section>
         </div>
+          </Link>
+          <Routes>
+              <Route path="/dga" element={<DerGrueneApfel />} />
+          </Routes>
+        </Router>
+        
         <div className="wrapper">
           <h1>Marine Mammals</h1>
           <Router>
