@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkumiz4kidz_vorlesebuch=self.webpackChunkumiz4kidz_vorlesebuch||[]).push([[6],{6:function(e,s,i){i.r(s);var c=i(87),n=i(184);s.default=function(){return(0,n.jsx)("div",{className:"container",children:(0,n.jsx)("div",{className:"banner-container",children:(0,n.jsxs)("div",{className:"banner",children:[(0,n.jsx)("h2",{children:"It's time for some Cocktails"}),(0,n.jsx)(c.rU,{to:"/products",children:(0,n.jsx)("div",{className:"btn",children:"View Cocktails"})})]})})})}}}]);
-//# sourceMappingURL=6.ee773ef1.chunk.js.map

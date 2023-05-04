@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkumiz4kidz_vorlesebuch=self.webpackChunkumiz4kidz_vorlesebuch||[]).push([[6],{6:function(e,s,n){n.r(s);var i=n(87),r=n(184);s.default=function(){return(0,r.jsx)("div",{className:"container",children:(0,r.jsx)("div",{className:"banner-container",children:(0,r.jsxs)("div",{className:"banner",children:[(0,r.jsx)("h2",{children:"It's time for books"}),(0,r.jsx)(i.rU,{to:"/vorlesebuecher",children:(0,r.jsx)("div",{className:"btn",children:"View books"})})]})})})}}}]);
+//# sourceMappingURL=6.ea437964.chunk.js.map

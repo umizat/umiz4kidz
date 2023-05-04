@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/umiz4kidz/static/css/main.ebc32534.css",
-    "main.js": "/umiz4kidz/static/js/main.22ea9d5b.js",
-    "static/js/6.ee773ef1.chunk.js": "/umiz4kidz/static/js/6.ee773ef1.chunk.js",
+    "main.css": "/umiz4kidz/static/css/main.c6650647.css",
+    "main.js": "/umiz4kidz/static/js/main.b89c89f1.js",
+    "static/js/6.ea437964.chunk.js": "/umiz4kidz/static/js/6.ea437964.chunk.js",
     "static/js/551.38590ff1.chunk.js": "/umiz4kidz/static/js/551.38590ff1.chunk.js",
-    "static/js/525.500d1a67.chunk.js": "/umiz4kidz/static/js/525.500d1a67.chunk.js",
-    "static/js/406.12ce76b0.chunk.js": "/umiz4kidz/static/js/406.12ce76b0.chunk.js",
+    "static/js/922.f9f30c43.chunk.js": "/umiz4kidz/static/js/922.f9f30c43.chunk.js",
+    "static/js/841.405cd00b.chunk.js": "/umiz4kidz/static/js/841.405cd00b.chunk.js",
     "static/js/681.bdb92741.chunk.js": "/umiz4kidz/static/js/681.bdb92741.chunk.js",
     "static/js/787.01986264.chunk.js": "/umiz4kidz/static/js/787.01986264.chunk.js",
     "index.html": "/umiz4kidz/index.html",
-    "main.ebc32534.css.map": "/umiz4kidz/static/css/main.ebc32534.css.map",
-    "main.22ea9d5b.js.map": "/umiz4kidz/static/js/main.22ea9d5b.js.map",
-    "6.ee773ef1.chunk.js.map": "/umiz4kidz/static/js/6.ee773ef1.chunk.js.map",
+    "main.c6650647.css.map": "/umiz4kidz/static/css/main.c6650647.css.map",
+    "main.b89c89f1.js.map": "/umiz4kidz/static/js/main.b89c89f1.js.map",
+    "6.ea437964.chunk.js.map": "/umiz4kidz/static/js/6.ea437964.chunk.js.map",
     "551.38590ff1.chunk.js.map": "/umiz4kidz/static/js/551.38590ff1.chunk.js.map",
-    "525.500d1a67.chunk.js.map": "/umiz4kidz/static/js/525.500d1a67.chunk.js.map",
-    "406.12ce76b0.chunk.js.map": "/umiz4kidz/static/js/406.12ce76b0.chunk.js.map",
+    "922.f9f30c43.chunk.js.map": "/umiz4kidz/static/js/922.f9f30c43.chunk.js.map",
+    "841.405cd00b.chunk.js.map": "/umiz4kidz/static/js/841.405cd00b.chunk.js.map",
     "681.bdb92741.chunk.js.map": "/umiz4kidz/static/js/681.bdb92741.chunk.js.map",
     "787.01986264.chunk.js.map": "/umiz4kidz/static/js/787.01986264.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebc32534.css",
-    "static/js/main.22ea9d5b.js"
+    "static/css/main.c6650647.css",
+    "static/js/main.b89c89f1.js"
   ]
 }
