@@ -8,7 +8,7 @@ const NavBar = () => {
 				<div className="nav-items container">
 					<div className="logo">
 						<a href="/">
-							<h1>COCKTAIL APP</h1>
+							<h1>umiz4kids</h1>
 						</a>
 					</div>
 					<ul>

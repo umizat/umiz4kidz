@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import vorlesebuecherjson from '../data/vorlesebuecher/vorlesebuecher.json';
 
 
 const Vorlesebuecher = () => {
@@ -7,14 +8,7 @@ const Vorlesebuecher = () => {
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		const fetchVorlesebuecher = async () => {
-			
-			let URL =  window.location.href + '/products.json';
-			let response = await fetch(URL);
-			setVorlesebuecher(await response.json());
-		};
-
-		fetchVorlesebuecher();
+		setVorlesebuecher(vorlesebuecherjson);
 	}, []);
 
 	return (
@@ -23,19 +17,19 @@ const Vorlesebuecher = () => {
 				Go Back
 			</button>
 			<div className="title">
-				<h1>CockTails</h1>
+				<h1>Vorlesebuecher</h1>
 			</div>
-			<div className="cocktails-container">
-				{vorlesebuecher.map((product) => (
-					<div key={product.id} className="cocktail-card">
-						<img src={product.image.url} alt="" className="cocktail-img" />
-						<div className="cocktail-info">
+			<div className="vorlesebuecher-container">
+				{vorlesebuecher.map((vorlesebuch) => (
+					<div key={vorlesebuch.id} className="vorlesebuch-card">
+						<img src= {vorlesebuch.img} alt="" className="vorlesebuch-img" />
+						<div className="vorlesebuch-info">
 							<div className="content-text">
-								<h2 className="cocktail-name">{product.name}</h2>
-								<span className="info">{product.info}</span>
+								<h2 className="vorlesebuch-name">{vorlesebuch.titel.de}</h2>
+								<span className="info">{vorlesebuch.titel.hu}</span>
 							</div>
-							<Link to={`/products/${product.slug}`}>
-								<div className="btn">View Details</div>
+							<Link to={`/vorlesebuecher/${vorlesebuch.slug}`}>
+								<div className="btn">Ansehen</div>
 							</Link>
 						</div>
 					</div>

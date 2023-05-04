@@ -29,9 +29,9 @@ const Vorlesebuch = () => {
 				</div>
 				<div className="flex-container">
 					{Vorlesebuch.image && (
-						<img src={Vorlesebuch.image.url} alt="" className="cocktail-img" />
+						<img src={Vorlesebuch.image.url} alt="" className="vorlesebuch-img" />
 					)}
-					<div className="cocktail-infos">
+					<div className="vorlesebuch-infos">
 						<div className="row">
 							<h3 className="label">Name: </h3>
 							<p className="text">{Vorlesebuch.name}</p>

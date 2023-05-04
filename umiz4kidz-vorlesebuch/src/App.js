@@ -17,7 +17,7 @@ function App() {
 					<Route path="/about" element={<About />} />
 					<Route path="/vorlesebuecher" element={<Vorlesebuecher />} />
 					<Route path="/vorlesebuecher/:slug" element={<Vorlesebuch />} />
-					<Route path="*" element={<NoMatch />} />
+				    <Route path="*" element={<NoMatch />} />
 				</Routes>
 			</Suspense>
 		</>

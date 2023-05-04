@@ -136,14 +136,14 @@ nav .nav-items {
 	margin: 40px 0;
 }
 
-.cocktails-container {
+.vorlesebuecher-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	grid-gap: 30px;
 	margin: 20px 0;
 }
 
-.cocktails-container .cocktail-card {
+.vorlesebuecher-container .vorlesebuch-card {
 	background: #fff;
 	border-radius: 10px;
 	padding: 20px;
@@ -151,30 +151,30 @@ nav .nav-items {
 	transition: all 0.3s ease-in-out;
 }
 
-.cocktails-container .cocktail-card:hover {
+.vorlesebuecher-container .vorlesebuch-card:hover {
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
-.cocktail-card .cocktail-img {
+.vorlesebuch-card .vorlesebuch-img {
 	width: 100%;
 	height: 300px;
 	object-fit: cover;
 	object-position: center;
 }
 
-.cocktail-card .cocktail-info {
+.vorlesebuch-card .vorlesebuch-info {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.cocktail-info .cocktail-name {
+.vorlesebuch-info .vorlesebuch-name {
 	font-size: 24px;
 	font-weight: 600;
 	color: #000;
 }
 
-.cocktail-info .btn {
+.vorlesebuch-info .btn {
 	background: #00a8ff;
 	color: #fff;
 	border: none;
@@ -185,7 +185,7 @@ nav .nav-items {
 	cursor: pointer;
 }
 
-.cocktail-info .btn:hover {
+.vorlesebuch-info .btn:hover {
 	background: #0097e6;
 }
 
@@ -220,7 +220,7 @@ nav .nav-items {
 	gap: 20px;
 }
 
-.flex-container .cocktail-img {
+.flex-container .vorlesebuch-img {
 	width: 100%;
 	height: 500px;
 	object-fit: cover;
@@ -229,11 +229,11 @@ nav .nav-items {
 	border-radius: 5px;
 }
 
-.cocktail-infos .row {
+.vorlesebuch-infos .row {
 	margin: 10px 0;
 }
 
-.cocktail-infos .row .label {
+.vorlesebuch-infos .row .label {
 	font-size: 18px;
 	font-weight: 600;
 	color: #000;

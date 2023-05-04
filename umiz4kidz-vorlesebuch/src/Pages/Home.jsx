@@ -5,9 +5,9 @@ const Home = () => {
 		<div className="container">
 			<div className="banner-container">
 				<div className="banner">
-					<h2>It's time for some Cocktails</h2>
-					<Link to="/products">
-						<div className="btn">View Cocktails</div>
+					<h2>It's time for books</h2>
+					<Link to="/vorlesebuecher">
+						<div className="btn">View books</div>
 					</Link>
 				</div>
 			</div>
