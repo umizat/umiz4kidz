@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkumiz4kidz_vorlesebuch=self.webpackChunkumiz4kidz_vorlesebuch||[]).push([[681],{681:function(e,r,s){s.r(r);s(791);var c=s(184);r.default=function(){return(0,c.jsx)("div",{children:(0,c.jsx)("div",{className:"container",children:(0,c.jsxs)("div",{className:"error-page",children:[(0,c.jsx)("h1",{className:"error-code",children:"404"}),(0,c.jsx)("p",{className:"error-text",children:"Page not found"})]})})})}}}]);
+//# sourceMappingURL=681.bdb92741.chunk.js.map
