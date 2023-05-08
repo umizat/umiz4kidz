@@ -1,22 +1,32 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import axios from 'axios';
 
 const Vorlesebuch = () => {
 	const [vorlesebuch, setVorlesebuch] = useState([]);
 	const navigate = useNavigate();
 	const { slug } = useParams();
 
-	useEffect(() => {
-		const fetchVorlesebuch = async () => {
-			
-			let URL =  window.location.href + '/data.json';
-			let response = await fetch(URL);
-			setVorlesebuch(await response.json());
-		};
 
-		fetchVorlesebuch
-		();
+	useEffect(() => {
+
+		const fetchVorlesebuch = async () => {
+			let URL = "http://localhost:8080/vlb/dga/";
+			const { book } = await fetch(URL)
+				.then(resp => resp.json())
+				.then((responseJson) => {
+					return responseJson;
+				})
+				.catch((error) => {
+					console.error(error);
+				});
+			setVorlesebuch(book);
+			console.error("sososo");
+		}
+
+		fetchVorlesebuch();
 	}, [slug]);
+
 
 	return (
 		<div className="container">
@@ -24,36 +34,19 @@ const Vorlesebuch = () => {
 				Go Back
 			</button>
 			<div>
-				<div className="title">
-					<h1>{Vorlesebuch.name}</h1>
-				</div>
-				<div className="flex-container">
-					{Vorlesebuch.image && (
-						<img src={Vorlesebuch.image.url} alt="" className="vorlesebuch-img" />
-					)}
-					<div className="vorlesebuch-infos">
-						<div className="row">
-							<h3 className="label">Name: </h3>
-							<p className="text">{Vorlesebuch.name}</p>
-						</div>
-						<div className="row">
-							<h3 className="label">Category: </h3>
-							<p className="text">{Vorlesebuch.category}</p>
-						</div>
-						<div className="row">
-							<h3 className="label">Info: </h3>
-							<p className="text">{Vorlesebuch.info}</p>
-						</div>
-						<div className="row">
-							<h3 className="label">Instructions: </h3>
-							<p className="text">{Vorlesebuch.instructions}</p>
-						</div>
-						<div className="row">
-							<h3 className="label">Ingredients: </h3>
-							<p className="text">{Vorlesebuch.ingredients}</p>
-						</div>
-					</div>
-				</div>
+				<p className="text">{vorlesebuch.titel}</p>
+				<a href=''>
+					<img src={vorlesebuch.img} alt="" className="vorlesebuch-img" />
+				</a>
+				
+				<div className="vorlesebuch-infos">
+				<button className="btn" onClick={() => navigate(-1)}>
+						Zurück
+					</button>
+
+					<button className="btn" onClick={() => navigate(-1)}>
+						nach vor
+					</button>				</div>
 			</div>
 		</div>
 	);

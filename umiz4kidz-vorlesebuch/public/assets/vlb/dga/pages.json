@@ -1,0 +1,24 @@
+[
+    {
+        "id": 0,
+        "titel": "TitelBlatt",
+        "img": "http://360demo.chilicode.com/umiz/vlb/dga/dga_0.jpeg",
+        "map": "http://360demo.chilicode.com/umiz/vlb/dga/map.json",
+        "audio": {
+            "de": "http://360demo.chilicode.com/umiz/vlb/dga/d01.mp3",
+            "hu": "http://360demo.chilicode.com/umiz/vlb/dga/d01.mp3",
+            "hr": "http://360demo.chilicode.com/umiz/vlb/dga/d01.mp3"
+        }
+    },
+    {
+        "id": 1,
+        "titel": "ersteSeite",
+        "img": "http://360demo.chilicode.com/umiz/vlb/dga/dga_1.jpeg",
+        "map": "http://360demo.chilicode.com/umiz/vlb/dga/map.json",
+        "audio": {
+            "de": "http://360demo.chilicode.com/umiz/vlb/dga/d01.mp3",
+            "hu": "http://360demo.chilicode.com/umiz/vlb/dga/d01.mp3",
+            "hr": "http://360demo.chilicode.com/umiz/vlb/dga/d01.mp3"
+        }
+    }
+]

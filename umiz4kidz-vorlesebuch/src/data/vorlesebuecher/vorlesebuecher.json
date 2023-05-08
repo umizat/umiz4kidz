@@ -6,8 +6,9 @@
             "hu": "A zöld alma",
             "hr": "xxx"
         },
-        "img": "http://360demo.chilicode.com/umiz/vorlesebuecher/dga_prev.jpeg",
-        "slug": "gda"
+        "img": "https://360demo.chilicode.com/umiz/vlb/dga/dga_0.jpeg",
+        "slug": "dga",
+        "data": "https://360demo.chilicode.com/umiz/vlb/dga/book.json"
     },
     {
         "id": 1,
@@ -16,7 +17,8 @@
             "hu": "A zöld alma",
             "hr": "xxx"
         },
-        "img": "http://360demo.chilicode.com/umiz/vorlesebuecher/dga_prev.jpeg",
-        "slug": "dga2"
+        "img": "https://360demo.chilicode.com/umiz/vlb/dga/dga_0.jpeg",
+        "slug": "dga2",
+        "data": "https://360demo.chilicode.com/umiz/vlb/dga/book.json"
     }
 ]
