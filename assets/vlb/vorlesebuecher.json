@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "titel": {
+            "de": "Der Grüne Apfel",
+            "hu": "A zöld alma",
+            "hr": "xxx"
+        },
+        "img": "/dga_prev.jpeg",
+        "slug": "dga"
+    },
+    {
+        "id": 1,
+        "titel": {
+            "de": "Der Grüne Apfel",
+            "hu": "A zöld alma",
+            "hr": "xxx"
+        },
+        "img": "/dga_prev.jpeg",
+        "slug": "dga2"
+    }
+]
