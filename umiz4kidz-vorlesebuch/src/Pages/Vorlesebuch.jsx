@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import axios from 'axios';
+import ImageWithMap from '../Components/ImageWithMap';
 
 const Vorlesebuch = () => {
 	const [vorlesebuch, setVorlesebuch] = useState([]);
@@ -21,7 +21,6 @@ const Vorlesebuch = () => {
 					console.error(error);
 				});
 			setVorlesebuch(book);
-			console.error("sososo");
 		}
 
 		fetchVorlesebuch();
@@ -33,11 +32,8 @@ const Vorlesebuch = () => {
 			<button className="btn" onClick={() => navigate(-1)}>
 				Go Back
 			</button>
-			<div>
-				<p className="text">{vorlesebuch.titel}</p>
-				<a href=''>
-					<img src={vorlesebuch.img} alt="" className="vorlesebuch-img" />
-				</a>
+			<div >
+				<ImageWithMap />
 				
 				<div className="vorlesebuch-infos">
 				<button className="btn" onClick={() => navigate(-1)}>

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import vorlesebuecherjson from '../data/vorlesebuecher/vorlesebuecher.json';
-import { ImageMap } from '@qiuz/react-image-map';
 
 
 const Vorlesebuecher = () => {
