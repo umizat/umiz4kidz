@@ -6,6 +6,7 @@ const Vorlesebuch = () => {
 	const [vorlesebuch, setVorlesebuch] = useState([]);
 	const navigate = useNavigate();
 	const { slug } = useParams();
+	const { page } = useParams();
 
 
 	useEffect(() => {
@@ -24,7 +25,7 @@ const Vorlesebuch = () => {
 		}
 
 		fetchVorlesebuch();
-	}, [slug]);
+	}, [slug, page]);
 
 
 	return (
@@ -32,9 +33,8 @@ const Vorlesebuch = () => {
 			<button className="btn" onClick={() => navigate(-1)}>
 				Go Back
 			</button>
-			<div >
-				<ImageWithMap />
-				
+			<div>
+				<ImageWithMap vorlesebuch={vorlesebuch}/>
 				<div className="vorlesebuch-infos">
 				<button className="btn" onClick={() => navigate(-1)}>
 						Zurück

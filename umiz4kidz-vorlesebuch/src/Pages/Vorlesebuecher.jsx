@@ -22,7 +22,7 @@ const Vorlesebuecher = () => {
 			<div className="vorlesebuecher-container">
 				{vorlesebuecher.map((vorlesebuch) => (
 					<div key={vorlesebuch.id} className="vorlesebuch-card">
-						<a href={`/vorlesebuecher/${vorlesebuch.slug}`} >
+						<a href={`/vorlesebuecher/${vorlesebuch.slug}/0/`} >
 							<img src= {vorlesebuch.img} alt="" className="vorlesebuch-img" />
 						</a>
 					</div>
