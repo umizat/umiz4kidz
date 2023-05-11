@@ -44,7 +44,7 @@ const Vorlesebuch = () => {
 					</button>
 
 					<button className="btn" onClick={() => navigate(-1)}>
-						nach vor
+						weiter
 					</button>				</div>
 			</div>
 		</div>
