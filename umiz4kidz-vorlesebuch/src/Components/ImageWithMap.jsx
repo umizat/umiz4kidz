@@ -5,24 +5,20 @@ import UmizImage from './UmizImage';
 
 const ImageWithMap = ({ vorlesebuch }) => {
 
-	const [width, setWidth] = useState([]);
-	const [height, setHeight] = useState([]);
-	const [image, setImage] = useState([])
-
-	const navigate = useNavigate();
 	const { slug } = useParams();
 	const { page } = useParams();
 	const containerRef = useRef(null);
 
-	const url = "http:///localhost:3000/assets/vlb/dga/d01.mp3";
+	const img = "http://360demo.chilicode.com/umiz/vlb/dga/1-Der gruene Apfel 1.jpeg";
+	const url = "http://360demo.chilicode.com/umiz/vlb/dga/d01.mp3";
 
-	const [audio] = useState(new Audio(url));
+	const baseUrl = "http://360demo.chilicode.com/umiz/vlb/";
+
+	const [audio] = useState(new Audio(baseUrl + slug + "/d01-seite0.mp3"));
 	const [playing, setPlaying] = useState(false);
 	const toggle = () => setPlaying(!playing);
 
-
-	const img = "http://360demo.chilicode.com/umiz/vlb/dga/dga_0.jpeg"
-
+	let pagedata = vorlesebuch[page];
 
 	const mapArea = [
 		{
@@ -47,8 +43,8 @@ const ImageWithMap = ({ vorlesebuch }) => {
 
 	useEffect(() => {
 		playing ? audio.play() : audio.pause();
-	  },
-	  [playing]
+	},
+		[playing]
 	);
 
 
@@ -59,24 +55,36 @@ const ImageWithMap = ({ vorlesebuch }) => {
 		const height = container.offsetHeight;
 		console.log(`Container size: ${width}px x ${height}px`);
 
+		console.log(vorlesebuch);
+		console.log(pagedata);
+
 		audio.addEventListener('ended', () => setPlaying(false));
 		return () => {
-		  audio.removeEventListener('ended', () => setPlaying(false));
+			audio.removeEventListener('ended', () => setPlaying(false));
 		};
+
+
+
+
 	}, [slug, page, containerRef, playing, toggle]);
 
 
 
 	return (
 		<div>
-			<nav>
-				<div ref={containerRef} className='imageContainer' style={{ position: "relative" }}>
-					<img className='' src={img} alt="" />
-						<div onClick={toggle} style={{ position: "absolute", left: `${mapArea[0].left}`, top: "0%", width: "100%", height: "50%", backgroundColor: "rgba(0, 0, 0, .25)" }}></div>
+		  <nav>
+			<div ref={containerRef} className='imageContainer' style={{ position: "relative" }}>
+			  {vorlesebuch && pagedata && (
+				<div>
+				  <img className='' src={baseUrl + slug + "/" + pagedata.img} alt="" />
+				  <div onClick={toggle} style={{ position: "absolute", left: `${mapArea[0].left}`, top: "0%", width: "100%", height: "50%", backgroundColor: "rgba(0, 0, 0, .25)" }}></div>
 				</div>
-			</nav>
+			  )}
+			</div>
+		  </nav>
 		</div>
-	);
+	  );
+	  
 };
 
 export default ImageWithMap;
