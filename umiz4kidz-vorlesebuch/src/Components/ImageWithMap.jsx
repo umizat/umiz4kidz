@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import UmizImage from './UmizImage';
+import { useParams } from 'react-router-dom';
 
 
 const ImageWithMap = ({ vorlesebuch }) => {
@@ -9,82 +8,131 @@ const ImageWithMap = ({ vorlesebuch }) => {
 	const { page } = useParams();
 	const containerRef = useRef(null);
 
-	const img = "http://360demo.chilicode.com/umiz/vlb/dga/1-Der gruene Apfel 1.jpeg";
-	const url = "http://360demo.chilicode.com/umiz/vlb/dga/d01.mp3";
+	let pagedata = vorlesebuch[page];
 
 	const baseUrl = "http://360demo.chilicode.com/umiz/vlb/";
 
-	const [audio] = useState(new Audio(baseUrl + slug + "/d01-seite0.mp3"));
-	const [playing, setPlaying] = useState(false);
-	const toggle = () => setPlaying(!playing);
+	if (pagedata) {
+		console.log("geladen" + pagedata)
+	}
 
-	let pagedata = vorlesebuch[page];
+	/* deutsches audio */
+	const [daudio, setDaudio] = useState(null);
+	const [playingd, setPlayingd] = useState(false);
+	const dtoggle = () => setPlayingd(!playingd);
 
-	const mapArea = [
+	/* ungarisches audio */
+	const [uaudio, setUaudio] = useState(null);
+	const [playingu, setPlayingu] = useState(false);
+	const utoggle = () => setPlayingu(!playingu);
+
+	/* kroatisches audio */
+	const [kaudio, setKaudio] = useState(null);
+	const [playingk, setPlayingk] = useState(false);
+	const ktoggle = () => setPlayingk(!playingk);
+
+
+	const map = [
 		{
-			left: '0%',
-			top: '0%',
-			height: '50%',
-			width: '100%'
+			"width": "44.017971758664956%",
+			"height": "39.45454545454545%",
+			"left": "50.14922978177151%",
+			"top": "36.72727272727273%"
 		},
 		{
-			left: '50%',
-			top: '50%',
-			height: '50%',
-			width: '50%'
+			"width": "87.93324775353017%",
+			"height": "28.909090909090907%",
+			"left": "6.105584082156612%",
+			"top": "6.909090909090909%"
 		},
 		{
-			left: '0%',
-			top: '50%',
-			height: '50%',
-			width: '50%'
-		},
+			"width": "37.997432605905004%",
+			"height": "38.18181818181819%",
+			"left": "5.848844672657253%",
+			"top": "38%"
+		}
 	];
 
 	useEffect(() => {
-		playing ? audio.play() : audio.pause();
-	},
-		[playing]
+		if (pagedata) {
+			console.log(pagedata);
+			setDaudio(new Audio(baseUrl + slug + "/" + pagedata.d));
+			setUaudio(new Audio(baseUrl + slug + "/" + pagedata.u));
+			setKaudio(new Audio(baseUrl + slug + "/" + pagedata.k));
+		}
+	}, [pagedata]
 	);
 
-
+	useEffect(() => {
+		if (pagedata) {
+			playingd ? daudio.play() : daudio.pause();
+			playingu ? uaudio.play() : uaudio.pause();
+			playingk ? kaudio.play() : kaudio.pause();
+		}
+	}, [playingd, daudio, playingu, uaudio, playingk, kaudio]
+	);
 
 	useEffect(() => {
-		const container = containerRef.current;
-		const width = container.offsetWidth;
-		const height = container.offsetHeight;
-		console.log(`Container size: ${width}px x ${height}px`);
-
-		console.log(vorlesebuch);
-		console.log(pagedata);
-
-		audio.addEventListener('ended', () => setPlaying(false));
-		return () => {
-			audio.removeEventListener('ended', () => setPlaying(false));
-		};
-
-
-
-
-	}, [slug, page, containerRef, playing, toggle]);
-
+		if (daudio) {
+			daudio.addEventListener('ended', () => setPlayingd(false));
+			return () => {
+				daudio.removeEventListener('ended', () => setPlayingd(false));
+			};
+		}
+		if (uaudio) {
+			uaudio.addEventListener('ended', () => setPlayingu(false));
+			return () => {
+				uaudio.removeEventListener('ended', () => setPlayingu(false));
+			};
+		}
+		if (kaudio) {
+			kaudio.addEventListener('ended', () => setPlayingk(false));
+			return () => {
+				kaudio.removeEventListener('ended', () => setPlayingk(false));
+			};
+		}
+	}, [playingd, daudio, playingu, uaudio, playingk, kaudio]);
 
 
 	return (
 		<div>
-		  <nav>
-			<div ref={containerRef} className='imageContainer' style={{ position: "relative" }}>
-			  {vorlesebuch && pagedata && (
-				<div>
-				  <img className='' src={baseUrl + slug + "/" + pagedata.img} alt="" />
-				  <div onClick={toggle} style={{ position: "absolute", left: `${mapArea[0].left}`, top: "0%", width: "100%", height: "50%", backgroundColor: "rgba(0, 0, 0, .25)" }}></div>
+			<nav>
+				<div ref={containerRef} className='imageContainer' style={{ position: "relative" }}>
+					{vorlesebuch && pagedata && (
+						<div>
+							<img className='' src={baseUrl + slug + "/" + pagedata.img} alt="" />
+							{console.log(map)}
+							<div onClick={dtoggle} style={{
+								position: "absolute",
+								left: `${map[0]['left']}`,
+								top: `${map[0]['top']}`,
+								width: `${map[0]["width"]}`,
+								height: `${map[0]["height"]}`,
+								backgroundColor: "rgba(0, 0, 0, .05)"
+							}}></div>
+							<div onClick={utoggle} style={{
+								position: "absolute",
+								left: `${map[1]?.left}`,
+								top: `${map[1]?.top}`,
+								width: `${map[1]?.width}`,
+								height: `${map[1]?.height}`,
+								backgroundColor: "rgba(0, 0, 0, .05)"
+							}}></div>
+							<div onClick={ktoggle} style={{
+								position: "absolute",
+								left: `${map[2]?.left}`,
+								top: `${map[2]?.top}`,
+								width: `${map[2]?.width}`,
+								height: `${map[2]?.height}`,
+								backgroundColor: "rgba(0, 0, 0, .05)"
+							}}></div>
+						</div>
+					)}
 				</div>
-			  )}
-			</div>
-		  </nav>
+			</nav>
 		</div>
-	  );
-	  
+	);
+
 };
 
 export default ImageWithMap;

@@ -1,24 +1,12 @@
 [
     {
         "id": 0,
-        "titel": {
-            "de": "Der Grüne Apfel",
-            "hu": "A zöld alma",
-            "hr": "xxx"
-        },
-        "img": "https://360demo.chilicode.com/umiz/vlb/dga/dga_0.jpeg",
-        "slug": "dga",
-        "data": "https://360demo.chilicode.com/umiz/vlb/dga/book.json"
+        "img": "https://360demo.chilicode.com/umiz/vlb/dga/1-Der gruene Apfel 1.jpeg",
+        "slug": "dga"
     },
     {
         "id": 1,
-        "titel": {
-            "de": "Der Grüne Apfel",
-            "hu": "A zöld alma",
-            "hr": "xxx"
-        },
-        "img": "https://360demo.chilicode.com/umiz/vlb/dga/dga_0.jpeg",
-        "slug": "dga2",
-        "data": "https://360demo.chilicode.com/umiz/vlb/dga/book.json"
+        "img": "https://360demo.chilicode.com/umiz/vlb/dga/1-Der gruene Apfel 1.jpeg",
+        "slug": "dga2"
     }
 ]
