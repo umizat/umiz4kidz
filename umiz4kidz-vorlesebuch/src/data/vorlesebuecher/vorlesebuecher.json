@@ -1,12 +1,12 @@
 [
     {
         "id": 0,
-        "img": "https://360demo.chilicode.com/umiz/vlb/dga/1-Der gruene Apfel 0.jpeg",
-        "slug": "dga"
+        "img": "https://360demo.chilicode.com/umiz/vlb/buch1/1-Der gruene Apfel 0.jpeg",
+        "slug": "buch1"
     },
     {
         "id": 1,
-        "img": "https://360demo.chilicode.com/umiz/vlb/dga/1-Der gruene Apfel 0.jpeg",
-        "slug": "dga2"
+        "img": "https://360demo.chilicode.com/umiz/vlb/buch2/2-Das verirrte Blatt 0.jpeg",
+        "slug": "buch2"
     }
 ]
