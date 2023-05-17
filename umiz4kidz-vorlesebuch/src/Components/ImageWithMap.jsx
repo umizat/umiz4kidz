@@ -101,9 +101,8 @@ const ImageWithMap = ({ vorlesebuch }) => {
 								top: "0%",
 								width: "10%",
 								height: "10%",
-								backgroundImage: {FaArrowLeft},
 								backgroundColor: "rgba(0, 0, 0, .05)"
-							}}></div>
+							}}><FaArrowLeft style={{ width: "100%", height: "100%" }}/></div>
 
 							<div onClick={handleIncrementPage} style={{
 								position: "absolute",
@@ -111,9 +110,8 @@ const ImageWithMap = ({ vorlesebuch }) => {
 								top: "0%",
 								width: "10%",
 								height: "10%",
-								backgroundImage: {FaArrowRight},
 								backgroundColor: "rgba(0, 0, 0, .05)"
-							}}></div>
+							}}><FaArrowRight style={{ width: "100%", height: "100%" }}/></div>
 
 
 							<div onClick={dtoggle} style={{
