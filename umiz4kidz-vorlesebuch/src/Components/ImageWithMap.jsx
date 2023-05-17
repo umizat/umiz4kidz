@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 
 const ImageWithMap = ({ vorlesebuch }) => {
@@ -7,6 +8,7 @@ const ImageWithMap = ({ vorlesebuch }) => {
 	const { slug } = useParams();
 	const { page } = useParams();
 	const containerRef = useRef(null);
+	const navigate = useNavigate();
 
 	let pagedata = vorlesebuch[page];
 
@@ -32,26 +34,16 @@ const ImageWithMap = ({ vorlesebuch }) => {
 	const ktoggle = () => setPlayingk(!playingk);
 
 
-	const map = [
-		{
-			"width": "44.017971758664956%",
-			"height": "39.45454545454545%",
-			"left": "50.14922978177151%",
-			"top": "36.72727272727273%"
-		},
-		{
-			"width": "87.93324775353017%",
-			"height": "28.909090909090907%",
-			"left": "6.105584082156612%",
-			"top": "6.909090909090909%"
-		},
-		{
-			"width": "37.997432605905004%",
-			"height": "38.18181818181819%",
-			"left": "5.848844672657253%",
-			"top": "38%"
-		}
-	];
+	const map = vorlesebuch[page]?.['map'];
+
+	const handleIncrementPage = () => {
+		navigate(`/vorlesebuecher/${slug}/${parseInt(page) + 1}`);
+	  };
+	
+	  const handleGoBack = () => {
+		navigate(-1);
+	  };
+	
 
 	useEffect(() => {
 		if (pagedata) {
@@ -101,7 +93,29 @@ const ImageWithMap = ({ vorlesebuch }) => {
 					{vorlesebuch && pagedata && (
 						<div>
 							<img className='' src={baseUrl + slug + "/" + pagedata.img} alt="" />
-							{console.log(map)}
+
+
+							<div onClick={handleGoBack} style={{
+								position: "absolute",
+								left: "0%",
+								top: "0%",
+								width: "10%",
+								height: "10%",
+								backgroundImage: {FaArrowLeft},
+								backgroundColor: "rgba(0, 0, 0, .05)"
+							}}></div>
+
+							<div onClick={handleIncrementPage} style={{
+								position: "absolute",
+								left: "90%",
+								top: "0%",
+								width: "10%",
+								height: "10%",
+								backgroundImage: {FaArrowRight},
+								backgroundColor: "rgba(0, 0, 0, .05)"
+							}}></div>
+
+
 							<div onClick={dtoggle} style={{
 								position: "absolute",
 								left: `${map[0]['left']}`,
