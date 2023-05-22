@@ -16,7 +16,7 @@ const Vorlesebuch = () => {
       setVorlesebuch(data);
     };
     fetchVorlesebuch();
-  }, [slug, page]);
+  }, [slug]);
 
 
 

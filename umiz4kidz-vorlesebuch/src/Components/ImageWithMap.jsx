@@ -21,29 +21,79 @@ const ImageWithMap = ({ vorlesebuch }) => {
 	/* deutsches audio */
 	const [daudio, setDaudio] = useState(null);
 	const [playingd, setPlayingd] = useState(false);
-	const dtoggle = () => setPlayingd(!playingd);
 
 	/* ungarisches audio */
 	const [uaudio, setUaudio] = useState(null);
 	const [playingu, setPlayingu] = useState(false);
-	const utoggle = () => setPlayingu(!playingu);
 
 	/* kroatisches audio */
 	const [kaudio, setKaudio] = useState(null);
 	const [playingk, setPlayingk] = useState(false);
-	const ktoggle = () => setPlayingk(!playingk);
+
+
+	const dtoggle = () => {
+		if (playingd) {
+			daudio.pause();
+		} else {
+			if (uaudio) uaudio.pause();
+			if (kaudio) kaudio.pause();
+			daudio.play();
+		}
+		setPlayingd(!playingd);
+		setPlayingu(false);
+		setPlayingk(false);
+	};
+
+	const utoggle = () => {
+		if (playingu) {
+			uaudio.pause();
+		} else {
+			if (daudio) daudio.pause();
+			if (kaudio) kaudio.pause();
+			uaudio.play();
+		}
+		setPlayingd(false);
+		setPlayingu(!playingu);
+		setPlayingk(false);
+	};
+
+	const ktoggle = () => {
+		if (playingk) {
+			kaudio.pause();
+		} else {
+			if (daudio) daudio.pause();
+			if (uaudio) uaudio.pause();
+			kaudio.play();
+		}
+		setPlayingd(false);
+		setPlayingu(false);
+		setPlayingk(!playingk);
+	};
 
 
 	const map = vorlesebuch[page]?.['map'];
 
+	const totalPages = Object.keys(vorlesebuch).length;
+
 	const handleIncrementPage = () => {
-		navigate(`/vorlesebuecher/${slug}/${parseInt(page) + 1}`);
-	  };
-	
-	  const handleGoBack = () => {
+		daudio.pause();
+		uaudio.pause();
+		kaudio.pause();
+		const nextPage = parseInt(page) + 1;
+		if (nextPage < totalPages) {
+			navigate(`/vorlesebuecher/${slug}/${nextPage}`);
+		} else {
+			navigate('/vorlesebuecher');
+		}
+	};
+
+	const handleGoBack = () => {
+		daudio.pause();
+		uaudio.pause();
+		kaudio.pause();
 		navigate(-1);
-	  };
-	
+	};
+
 
 	useEffect(() => {
 		if (pagedata) {
@@ -52,7 +102,7 @@ const ImageWithMap = ({ vorlesebuch }) => {
 			setUaudio(new Audio(baseUrl + slug + "/" + pagedata.u));
 			setKaudio(new Audio(baseUrl + slug + "/" + pagedata.k));
 		}
-	}, [pagedata]
+	}, [pagedata, slug]
 	);
 
 	useEffect(() => {
@@ -102,7 +152,7 @@ const ImageWithMap = ({ vorlesebuch }) => {
 								width: "10%",
 								height: "10%",
 								backgroundColor: "rgba(0, 0, 0, .05)"
-							}}><FaArrowLeft style={{ width: "100%", height: "100%" }}/></div>
+							}}><FaArrowLeft style={{ width: "100%", height: "100%" }} /></div>
 
 							<div onClick={handleIncrementPage} style={{
 								position: "absolute",
@@ -111,7 +161,7 @@ const ImageWithMap = ({ vorlesebuch }) => {
 								width: "10%",
 								height: "10%",
 								backgroundColor: "rgba(0, 0, 0, .05)"
-							}}><FaArrowRight style={{ width: "100%", height: "100%" }}/></div>
+							}}><FaArrowRight style={{ width: "100%", height: "100%" }} /></div>
 
 
 							<div onClick={dtoggle} style={{

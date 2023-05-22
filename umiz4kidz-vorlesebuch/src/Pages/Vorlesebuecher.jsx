@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import vorlesebuecherjson from '../data/vorlesebuecher/vorlesebuecher.json';
 
 
@@ -9,6 +9,7 @@ const Vorlesebuecher = () => {
 
 	useEffect(() => {
 		setVorlesebuecher(vorlesebuecherjson);
+		console.log(vorlesebuecher);
 	}, []);
 
 	return (
