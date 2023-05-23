@@ -151,7 +151,6 @@ const ImageWithMap = ({ vorlesebuch }) => {
 								top: "0%",
 								width: "10%",
 								height: "10%",
-								backgroundColor: "rgba(0, 0, 0, .05)"
 							}}><FaArrowLeft style={{ width: "100%", height: "100%" }} /></div>
 
 							<div onClick={handleIncrementPage} style={{
@@ -160,7 +159,6 @@ const ImageWithMap = ({ vorlesebuch }) => {
 								top: "0%",
 								width: "10%",
 								height: "10%",
-								backgroundColor: "rgba(0, 0, 0, .05)"
 							}}><FaArrowRight style={{ width: "100%", height: "100%" }} /></div>
 
 
@@ -170,7 +168,6 @@ const ImageWithMap = ({ vorlesebuch }) => {
 								top: `${map[0]['top']}`,
 								width: `${map[0]["width"]}`,
 								height: `${map[0]["height"]}`,
-								backgroundColor: "rgba(0, 0, 0, .05)"
 							}}></div>
 							<div onClick={utoggle} style={{
 								position: "absolute",
@@ -178,7 +175,6 @@ const ImageWithMap = ({ vorlesebuch }) => {
 								top: `${map[1]?.top}`,
 								width: `${map[1]?.width}`,
 								height: `${map[1]?.height}`,
-								backgroundColor: "rgba(0, 0, 0, .05)"
 							}}></div>
 							<div onClick={ktoggle} style={{
 								position: "absolute",
@@ -186,7 +182,6 @@ const ImageWithMap = ({ vorlesebuch }) => {
 								top: `${map[2]?.top}`,
 								width: `${map[2]?.width}`,
 								height: `${map[2]?.height}`,
-								backgroundColor: "rgba(0, 0, 0, .05)"
 							}}></div>
 						</div>
 					)}
