@@ -147,16 +147,16 @@ const ImageWithMap = ({ vorlesebuch }) => {
 
 							<div onClick={handleGoBack} style={{
 								position: "absolute",
-								left: "0%",
-								top: "0%",
+								left: "-10%",
+								top: "45%",
 								width: "10%",
 								height: "10%",
 							}}><FaArrowLeft style={{ width: "100%", height: "100%" }} /></div>
 
 							<div onClick={handleIncrementPage} style={{
 								position: "absolute",
-								left: "90%",
-								top: "0%",
+								left: "100%",
+								top: "45%",
 								width: "10%",
 								height: "10%",
 							}}><FaArrowRight style={{ width: "100%", height: "100%" }} /></div>
