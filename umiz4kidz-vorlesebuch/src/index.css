@@ -251,9 +251,9 @@ nav .nav-items {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	width: 40px;
-	height: 40px;
-	background-color: rgba(0, 0, 0, 0.05);
+	width: 80px;
+	height: 80px;
+	/* background-color: rgba(0, 0, 0, 0.05); */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -261,9 +261,9 @@ nav .nav-items {
 }
 
 .left-arrow {
-	left: 0;
+	left: -4%;
 }
 
 .right-arrow {
-	right: 0;
+	right: -4%;
 }
