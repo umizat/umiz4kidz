@@ -267,3 +267,8 @@ nav .nav-items {
 .right-arrow {
 	right: -4%;
 }
+
+.divWithHandCursor {
+	cursor: pointer;
+  }
+  

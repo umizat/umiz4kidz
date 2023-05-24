@@ -142,32 +142,32 @@ const ImageWithMap = ({ vorlesebuch }) => {
 			  <div ref={containerRef} className='imageContainer' style={{ position: "relative" }}>
 				{vorlesebuch && pagedata && (
 				  <div>
-					<div className="arrow left-arrow" onClick={handleGoBack}>
+					<div  className="arrow left-arrow divWithHandCursor"  onClick={handleGoBack}>
 					  <FaArrowLeft style={{ width: "100%", height: "100%" }} />
 					</div>
 					<img className='' src={baseUrl + slug + "/" + pagedata.img} alt="" />
-					<div onClick={dtoggle} style={{
+					<div className='divWithHandCursor' onClick={dtoggle} style={{
 					  position: "absolute",
 					  left: `${map[0]['left']}`,
 					  top: `${map[0]['top']}`,
 					  width: `${map[0]["width"]}`,
 					  height: `${map[0]["height"]}`,
 					}}></div>
-					<div onClick={utoggle} style={{
+					<div  className='divWithHandCursor' onClick={utoggle} style={{
 					  position: "absolute",
 					  left: `${map[1]?.left}`,
 					  top: `${map[1]?.top}`,
 					  width: `${map[1]?.width}`,
 					  height: `${map[1]?.height}`,
 					}}></div>
-					<div onClick={ktoggle} style={{
+					<div  className='divWithHandCursor' onClick={ktoggle} style={{
 					  position: "absolute",
 					  left: `${map[2]?.left}`,
 					  top: `${map[2]?.top}`,
 					  width: `${map[2]?.width}`,
 					  height: `${map[2]?.height}`,
 					}}></div>
-					<div className="arrow right-arrow" onClick={handleIncrementPage}>
+					<div className="arrow right-arrow divWithHandCursor" onClick={handleIncrementPage}>
 					  <FaArrowRight style={{ width: "100%", height: "100%" }} />
 					</div>
 				  </div>
