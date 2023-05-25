@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Swipeable } from 'react-swipeable';
+
 
 
 const ImageWithMap = ({ vorlesebuch }) => {
@@ -94,6 +96,16 @@ const ImageWithMap = ({ vorlesebuch }) => {
 		navigate(-1);
 	};
 
+	const handleSwipeLeft = () => {
+		// Logic for handling swipe left
+		handleIncrementPage();
+	};
+
+	const handleSwipeRight = () => {
+		// Logic for handling swipe right
+		handleGoBack();
+	};
+
 
 	useEffect(() => {
 		if (pagedata) {
@@ -138,48 +150,48 @@ const ImageWithMap = ({ vorlesebuch }) => {
 
 	return (
 		<div>
-		  <nav>
-			  <div ref={containerRef} className='imageContainer' style={{ position: "relative" }}>
-				{vorlesebuch && pagedata && (
-				  <div>
-					<div  className="arrow left-arrow divWithHandCursor"  onClick={handleGoBack}>
-					  <FaArrowLeft style={{ width: "100%", height: "100%" }} />
-					</div>
-					<img className='' src={baseUrl + slug + "/" + pagedata.img} alt="" />
-					<div className='divWithHandCursor' onClick={dtoggle} style={{
-					  position: "absolute",
-					  left: `${map[0]['left']}`,
-					  top: `${map[0]['top']}`,
-					  width: `${map[0]["width"]}`,
-					  height: `${map[0]["height"]}`,
-					}}></div>
-					<div  className='divWithHandCursor' onClick={utoggle} style={{
-					  position: "absolute",
-					  left: `${map[1]?.left}`,
-					  top: `${map[1]?.top}`,
-					  width: `${map[1]?.width}`,
-					  height: `${map[1]?.height}`,
-					}}></div>
-					<div  className='divWithHandCursor' onClick={ktoggle} style={{
-					  position: "absolute",
-					  left: `${map[2]?.left}`,
-					  top: `${map[2]?.top}`,
-					  width: `${map[2]?.width}`,
-					  height: `${map[2]?.height}`,
-					}}></div>
-					<div className="arrow right-arrow divWithHandCursor" onClick={handleIncrementPage}>
-					  <FaArrowRight style={{ width: "100%", height: "100%" }} />
-					</div>
-				  </div>
-				)}
-			  </div>
-		  </nav>
+			<nav>
+				<div ref={containerRef} className='imageContainer' style={{ position: "relative" }}>
+					{vorlesebuch && pagedata && (
+						<div>
+							<div className="arrow left-arrow divWithHandCursor" onClick={handleGoBack}>
+								<FaArrowLeft style={{ width: "100%", height: "100%" }} />
+							</div>
+							<img className='' src={baseUrl + slug + "/" + pagedata.img} alt="" />
+							<div className='divWithHandCursor' onClick={dtoggle} style={{
+								position: "absolute",
+								left: `${map[0]['left']}`,
+								top: `${map[0]['top']}`,
+								width: `${map[0]["width"]}`,
+								height: `${map[0]["height"]}`,
+							}}></div>
+							<div className='divWithHandCursor' onClick={utoggle} style={{
+								position: "absolute",
+								left: `${map[1]?.left}`,
+								top: `${map[1]?.top}`,
+								width: `${map[1]?.width}`,
+								height: `${map[1]?.height}`,
+							}}></div>
+							<div className='divWithHandCursor' onClick={ktoggle} style={{
+								position: "absolute",
+								left: `${map[2]?.left}`,
+								top: `${map[2]?.top}`,
+								width: `${map[2]?.width}`,
+								height: `${map[2]?.height}`,
+							}}></div>
+							<div className="arrow right-arrow divWithHandCursor" onClick={handleIncrementPage}>
+								<FaArrowRight style={{ width: "100%", height: "100%" }} />
+							</div>
+						</div>
+					)}
+				</div>
+			</nav>
 		</div>
-	  );
-	  
-	  
-	  
-	  
+	);
+
+
+
+
 
 };
 
