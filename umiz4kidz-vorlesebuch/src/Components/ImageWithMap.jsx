@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { Swipeable } from 'react-swipeable';
+import SwipeableViews from 'react-swipeable-views';
 
 
 
@@ -153,6 +153,7 @@ const ImageWithMap = ({ vorlesebuch }) => {
 			<nav>
 				<div ref={containerRef} className='imageContainer' style={{ position: "relative" }}>
 					{vorlesebuch && pagedata && (
+						<SwipeableViews onSwipedLeft={handleSwipeLeft} onSwipedRight={handleSwipeRight}>
 						<div>
 							<div className="arrow left-arrow divWithHandCursor" onClick={handleGoBack}>
 								<FaArrowLeft style={{ width: "100%", height: "100%" }} />
@@ -183,6 +184,7 @@ const ImageWithMap = ({ vorlesebuch }) => {
 								<FaArrowRight style={{ width: "100%", height: "100%" }} />
 							</div>
 						</div>
+						</SwipeableViews>
 					)}
 				</div>
 			</nav>
