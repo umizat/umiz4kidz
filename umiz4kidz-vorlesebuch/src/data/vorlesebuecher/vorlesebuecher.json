@@ -23,6 +23,16 @@
         "id": 4,
         "img": "https://360demo.chilicode.com/umiz/vlb/buch5/5 - HASE GEORG 0.jpeg",
         "slug": "buch5"
+    },
+    {
+        "id": 5,
+        "img": "https://360demo.chilicode.com/umiz/vlb/buch6/6 - LILLI DER SCHMETTERLING 0.jpeg",
+        "slug": "buch6"
+    },
+    {
+        "id": 6,
+        "img": "https://360demo.chilicode.com/umiz/vlb/buch7/7 - SIGMUND DIE SCHNECKE 0.jpeg",
+        "slug": "buch7"
     }
 
 ]
