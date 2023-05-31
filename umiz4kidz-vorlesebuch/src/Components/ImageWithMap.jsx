@@ -14,7 +14,7 @@ const ImageWithMap = ({ vorlesebuch }) => {
 
 	let pagedata = vorlesebuch[page];
 
-	const baseUrl = "http://360demo.chilicode.com/umiz/vlb/";
+	const baseUrl = "https://data.umiz4kids.at/books/";
 
 	if (pagedata) {
 		console.log("geladen" + pagedata)
