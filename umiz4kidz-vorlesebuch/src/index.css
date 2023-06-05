@@ -246,15 +246,24 @@ nav .nav-items {
 	position: relative;
 	height: calc(100vh - 60px);
 	text-align: center;
+	aspect-ratio: 4/3;
+} 
 
-}  
+.outerImageContainer {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	height: calc(100vh - 60px);
+	
+
+} 
 .imageContainer img {
 	width: auto;
 	height: 100%;
 	object-fit: contain; /* Scale the image to fit the container while maintaining aspect ratio */
   }
 
-.arrow {
+  .arrow {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -268,11 +277,11 @@ nav .nav-items {
 }
 
 .left-arrow {
-	left: -3%;
+	left: 0%;
 }
 
 .right-arrow {
-	right: -3%;
+	right: 0%;
 }
 
 .divWithHandCursor {
