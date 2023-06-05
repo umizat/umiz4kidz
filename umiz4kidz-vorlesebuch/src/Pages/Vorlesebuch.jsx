@@ -10,7 +10,7 @@ const Vorlesebuch = () => {
 
   useEffect(() => {
     const fetchVorlesebuch = async () => {
-      let URL = `https://360demo.chilicode.com/umiz/vlb/${slug}/data.json`;
+      let URL = `https://umiz4kids.at/vorlesebuecher/${slug}/data.json`;
       let response = await fetch(URL);
       let data = await response.json();
       setVorlesebuch(data);
