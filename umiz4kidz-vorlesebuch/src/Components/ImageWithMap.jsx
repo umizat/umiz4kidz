@@ -141,10 +141,9 @@ const ImageWithMap = ({ vorlesebuch }) => {
 	return (
 		<div>
 			<nav>
-				<div ref={containerRef} className='imageContainer' style={{ position: "relative" }}>
+				<div ref={containerRef} className='imageContainer'>
 					{vorlesebuch && pagedata && (
-						
-						<div>
+						<div  className='imageContainer'>
 							<div className="arrow left-arrow divWithHandCursor" onClick={handleGoBack}>
 								<FaArrowLeft style={{ width: "100%", height: "100%" }} />
 							</div>
