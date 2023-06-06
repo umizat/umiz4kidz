@@ -247,6 +247,7 @@ nav .nav-items {
 	height: calc(100vh - 60px);
 	text-align: center;
 	aspect-ratio: 4/3;
+
 } 
 
 .outerImageContainer {
@@ -286,6 +287,6 @@ nav .nav-items {
 
 .divWithHandCursor {
 	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.05);
+	/* background-color: rgba(0, 0, 0, 0.05); */
   }
   

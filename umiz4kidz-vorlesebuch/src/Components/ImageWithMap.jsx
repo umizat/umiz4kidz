@@ -141,7 +141,7 @@ const ImageWithMap = ({ vorlesebuch }) => {
 	return (
 		<div>
 			<nav>
-				<div ref={containerRef} className='outerImageContainer'>
+				<div ref={containerRef}>
 					{vorlesebuch && pagedata && (
 						<div className='outerImageContainer'>
 							<div className='imageContainer'>
