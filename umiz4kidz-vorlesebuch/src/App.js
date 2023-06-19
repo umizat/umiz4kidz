@@ -4,7 +4,10 @@ import NavBar from './Components/NavBar';
 const Home = lazy(() => import('./Pages/Home'));
 const About = lazy(() => import('./Pages/About'));
 const Vorlesebuecher = lazy(() => import('./Pages/Vorlesebuecher'));
+const Woerterbuecher = lazy(() => import('./Pages/Woerterbuecher'));
 const Vorlesebuch = lazy(() => import('./Pages/Vorlesebuch'));
+const Woerterbuch = lazy(() => import('./Pages/Woerterbuch'));
+
 const NoMatch = lazy(() => import('./Components/NoMatch'));
 
 function App() {
@@ -17,6 +20,8 @@ function App() {
 					<Route path="/about" element={<About />} />
 					<Route path="/vorlesebuecher" element={<Vorlesebuecher />} />
 					<Route path="/vorlesebuecher/:slug/:page" element={<Vorlesebuch />} />
+					<Route path="/woerterbuecher" element={<Woerterbuecher />} />
+					<Route path="/woerterbuecher/:slug/:page" element={<Woerterbuch />} />
 				    <Route path="*" element={<NoMatch />} />
 				</Routes>
 			</Suspense>

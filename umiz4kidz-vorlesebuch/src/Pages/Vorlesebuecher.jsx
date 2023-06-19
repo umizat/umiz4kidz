@@ -20,11 +20,11 @@ const Vorlesebuecher = () => {
 			<div className="title">
 				<h1>Vorlesebücher</h1>
 			</div>
-			<div className="vorlesebuecher-container">
+			<div className="buecher-container">
 				{vorlesebuecher.map((vorlesebuch) => (
-					<div key={vorlesebuch.id} className="vorlesebuch-card">
+					<div key={vorlesebuch.id} className="buch-card">
 						<a href={`/vorlesebuecher/${vorlesebuch.slug}/0/`} >
-							<img src= {vorlesebuch.img} alt="" className="vorlesebuch-img" />
+							<img src= {vorlesebuch.img} alt="" className="buch-img" />
 						</a>
 					</div>
 				))}

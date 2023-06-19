@@ -5,9 +5,13 @@ const Home = () => {
 		<div className="container">
 			<div className="banner-container">
 				<div className="banner">
-					<h2>It's time for books</h2>
+				<h2>It's time for books</h2>
 					<Link to="/vorlesebuecher">
-						<div className="btn">View books</div>
+						<div className="btn">Vorlese</div>
+					</Link>
+					<h2>It's time for books</h2>
+					<Link to="/woerterbuecher">
+						<div className="btn">Wörterbücher</div>
 					</Link>
 				</div>
 			</div>
