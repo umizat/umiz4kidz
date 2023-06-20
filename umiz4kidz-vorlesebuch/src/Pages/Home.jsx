@@ -5,11 +5,11 @@ const Home = () => {
 		<div className="container">
 			<div className="banner-container">
 				<div className="banner">
-				<h2>It's time for books</h2>
+				<h2>Hier sind die</h2>
 					<Link to="/vorlesebuecher">
-						<div className="btn">Vorlese</div>
+						<div className="btn">Vorlesebücher</div>
 					</Link>
-					<h2>It's time for books</h2>
+					<h2>Hier sind die</h2>
 					<Link to="/woerterbuecher">
 						<div className="btn">Wörterbücher</div>
 					</Link>
