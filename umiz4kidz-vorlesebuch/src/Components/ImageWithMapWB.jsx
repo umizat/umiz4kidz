@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
@@ -17,11 +17,19 @@ const ImageWithMapWB = ({ buch }) => {
   useEffect(() => {
     setAudio(new Audio(baseUrl + slug + '/' + page + '/39-01.mp3'));
     setIsPlaying(false);
+
+    // Cleanup function
+    return () => {
+      audio.pause();
+      setIsPlaying(false);
+    };
   }, [slug, page]);
 
   const handleIncrementPage = () => {
     const nextPage = parseInt(page) + 1;
     if (nextPage < Object.keys(buch).length) {
+      audio.pause();
+      setIsPlaying(false);
       navigate(`/woerterbuecher/${slug}/${nextPage}`);
     } else {
       navigate('/woerterbuecher');
@@ -29,29 +37,30 @@ const ImageWithMapWB = ({ buch }) => {
   };
 
   const handleGoBack = () => {
+    audio.pause();
+    setIsPlaying(false);
     navigate(-1);
   };
 
   const handleDivClick = (index) => {
-	index = index + 1;
-	if (isPlaying) {
-	  if (audio.src.includes(`/39-0${index}.mp3`)) {
-		// Clicked the same div again, pause the audio
-		audio.pause();
-		setIsPlaying(false);
-		return;
-	  } else {
-		// Clicked a different div, pause the current audio
-		audio.pause();
-	  }
-	}
-	const newAudio = new Audio(baseUrl + slug + '/' + page + '/39-0' + index + '.mp3');
-	setAudio(newAudio);
-	setIsPlaying(true);
-	newAudio.autoplay = true;
-	console.log(`Div ${index} clicked`);
+    index = index + 1;
+    if (isPlaying) {
+      if (audio.src.includes(`/39-0${index}.mp3`)) {
+        // Clicked the same div again, pause the audio
+        audio.pause();
+        setIsPlaying(false);
+        return;
+      } else {
+        // Clicked a different div, pause the current audio
+        audio.pause();
+      }
+    }
+    const newAudio = new Audio(baseUrl + slug + '/' + page + '/39-0' + index + '.mp3');
+    setAudio(newAudio);
+    setIsPlaying(true);
+    newAudio.autoplay = true;
+    console.log(`Div ${index} clicked`);
   };
-  
 
   return (
     <div>
