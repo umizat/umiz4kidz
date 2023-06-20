@@ -33,6 +33,31 @@
         "id": 6,
         "img": "https://data.umiz4kids.at/books/buch7/7 - SIGMUND DIE SCHNECKE 0.jpeg",
         "slug": "buch7"
+    },
+    {
+        "id": 7,
+        "img": "https://data.umiz4kids.at/books/buch8/8 - SOMMERFEST FROSCHE 0.jpeg",
+        "slug": "buch8"
+    },
+    {
+        "id": 8,
+        "img": "https://data.umiz4kids.at/books/buch9/9 - CINCI DIE KLEINE MAUS 0.jpeg",
+        "slug": "buch9"
+    },
+    {
+        "id": 9,
+        "img": "https://data.umiz4kids.at/books/buch10/10 - MIT DANIEL DURCHS JAHR 0.jpeg",
+        "slug": "buch10"
+    },
+    {
+        "id": 10,
+        "img": "https://data.umiz4kids.at/books/buch11/11 - CLOWN HANSI 0.jpeg",
+        "slug": "buch11"
+    },
+    {
+        "id": 11,
+        "img": "https://data.umiz4kids.at/books/buch12/12 - FASCHING MIT MOLLY 0.jpeg",
+        "slug": "buch12"
     }
 
 ]
