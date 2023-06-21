@@ -58,6 +58,26 @@
         "id": 11,
         "img": "https://data.umiz4kids.at/books/buch12/12 - FASCHING MIT MOLLY 0.jpeg",
         "slug": "buch12"
+    },
+    {
+        "id": 12,
+        "img": "https://data.umiz4kids.at/books/buch13/13 - FEENLAND 0.jpeg",
+        "slug": "buch13"
+    },
+    {
+        "id": 13,
+        "img": "https://data.umiz4kids.at/books/buch14/14 - DODO 0.jpeg",
+        "slug": "buch14"
+    },
+    {
+        "id": 14,
+        "img": "https://data.umiz4kids.at/books/buch15/15 - NIKOLAUS 0.jpeg.jpeg",
+        "slug": "buch15"
+    },
+    {
+        "id": 15,
+        "img": "https://data.umiz4kids.at/books/buch16/16 - MISI 0.jpeg",
+        "slug": "buch16"
     }
 
 ]
