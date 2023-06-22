@@ -78,6 +78,16 @@
         "id": 15,
         "img": "https://data.umiz4kids.at/books/buch16/16 - MISI 0.jpeg",
         "slug": "buch16"
+    },
+    {
+        "id": 16,
+        "img": "https://data.umiz4kids.at/books/buch17/17 - PFERDE 0.jpeg",
+        "slug": "buch17"
+    },
+    {
+        "id": 17,
+        "img": "https://data.umiz4kids.at/books/buch18/18 - KERZE 0.jpeg",
+        "slug": "buch18"
     }
 
 ]
