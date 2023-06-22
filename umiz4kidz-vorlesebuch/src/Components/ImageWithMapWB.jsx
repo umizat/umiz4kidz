@@ -15,7 +15,7 @@ const ImageWithMapWB = ({ buch }) => {
   const pagedata = buch[page];
 
   useEffect(() => {
-    setAudio(new Audio(baseUrl + slug + '/' + page + '/39-01.mp3'));
+    setAudio(new Audio(baseUrl + slug + '/' + page + '/01.mp3'));
     setIsPlaying(false);
 
     // Cleanup function
@@ -45,7 +45,7 @@ const ImageWithMapWB = ({ buch }) => {
   const handleDivClick = (index) => {
     index = index + 1;
     if (isPlaying) {
-      if (audio.src.includes(`/39-0${index}.mp3`)) {
+      if (audio.src.includes(`/0${index}.mp3`)) {
         // Clicked the same div again, pause the audio
         audio.pause();
         setIsPlaying(false);
@@ -55,7 +55,7 @@ const ImageWithMapWB = ({ buch }) => {
         audio.pause();
       }
     }
-    const newAudio = new Audio(baseUrl + slug + '/' + page + '/39-0' + index + '.mp3');
+    const newAudio = new Audio(baseUrl + slug + '/' + page + '/0' + index + '.mp3');
     setAudio(newAudio);
     setIsPlaying(true);
     newAudio.autoplay = true;
