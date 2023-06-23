@@ -88,6 +88,26 @@
         "id": 17,
         "img": "https://data.umiz4kids.at/books/buch18/18 - KERZE 0.jpeg",
         "slug": "buch18"
+    },
+    {
+        "id": 18,
+        "img": "https://data.umiz4kids.at/books/buch19/19 - GEIST 0.jpeg",
+        "slug": "buch19"
+    },
+    {
+        "id": 19,
+        "img": "https://data.umiz4kids.at/books/buch20/20 - PINGUIN 0.jpeg",
+        "slug": "buch20"
+    },
+    {
+        "id": 20,
+        "img": "https://data.umiz4kids.at/books/buch21/21 - BAER 0.jpeg",
+        "slug": "buch21"
+    },
+    {
+        "id": 21,
+        "img": "https://data.umiz4kids.at/books/buch22/22 - ELEFANT 0.jpeg",
+        "slug": "buch22"
     }
 
 ]
