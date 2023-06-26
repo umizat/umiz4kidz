@@ -108,6 +108,16 @@
         "id": 21,
         "img": "https://data.umiz4kids.at/books/buch22/22 - ELEFANT 0.jpeg",
         "slug": "buch22"
+    },
+    {
+        "id": 22,
+        "img": "https://data.umiz4kids.at/books/buch23/23 - FISCH 0.jpeg",
+        "slug": "buch23"
+    },
+    {
+        "id": 23,
+        "img": "https://data.umiz4kids.at/books/buch24/24 - ZOO 0.jpeg",
+        "slug": "buch24"
     }
 
 ]
