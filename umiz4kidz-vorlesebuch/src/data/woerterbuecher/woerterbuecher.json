@@ -3,5 +3,10 @@
         "id": 0,
         "img": "https://data.umiz4kids.at/dictionary/buch39/0/ABC-UNGARISCH39 0.jpeg",
         "slug": "buch39"
+    },
+    {
+        "id": 1,
+        "img": "https://data.umiz4kids.at/dictionary/buch40/0/ABC-DEUTSCH40 0.jpeg",
+        "slug": "buch40"
     }
 ]
