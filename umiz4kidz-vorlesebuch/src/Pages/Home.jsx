@@ -13,6 +13,10 @@ const Home = () => {
 					<Link to="/woerterbuecher">
 						<div className="btn">Wörterbücher</div>
 					</Link>
+					<h2>Hier sind die</h2>
+					<Link to="/mitlesebuecher">
+						<div className="btn">Mitlesebücher</div>
+					</Link>
 				</div>
 			</div>
 		</div>

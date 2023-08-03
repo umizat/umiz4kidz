@@ -22,6 +22,9 @@ const NavBar = () => {
 							<NavLink to="/vorlesebuecher">Vorlesebuecher</NavLink>
 						</li>
 						<li>
+							<NavLink to="/mitlesebuecher">Mitlesebuecher</NavLink>
+						</li>
+						<li>
 							<NavLink to="/woerterbuecher">Wörterbücher</NavLink>
 						</li>
 					</ul>

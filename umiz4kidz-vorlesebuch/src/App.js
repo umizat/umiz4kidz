@@ -5,8 +5,10 @@ const Home = lazy(() => import('./Pages/Home'));
 const About = lazy(() => import('./Pages/About'));
 const Vorlesebuecher = lazy(() => import('./Pages/Vorlesebuecher'));
 const Woerterbuecher = lazy(() => import('./Pages/Woerterbuecher'));
+const Mitlesebuecher = lazy(() => import('./Pages/Mitlesebuecher'));
 const Vorlesebuch = lazy(() => import('./Pages/Vorlesebuch'));
 const Woerterbuch = lazy(() => import('./Pages/Woerterbuch'));
+const Mitlesebuch = lazy(() => import('./Pages/Mitlesebuch'));
 
 const NoMatch = lazy(() => import('./Components/NoMatch'));
 
@@ -22,6 +24,8 @@ function App() {
 					<Route path="/vorlesebuecher/:slug/:page" element={<Vorlesebuch />} />
 					<Route path="/woerterbuecher" element={<Woerterbuecher />} />
 					<Route path="/woerterbuecher/:slug/:page" element={<Woerterbuch />} />
+					<Route path="/mitlesebuecher" element={<Mitlesebuecher />} />
+					<Route path="/mitlesebuecher/:slug/:page" element={<Mitlesebuch />} />
 				    <Route path="*" element={<NoMatch />} />
 				</Routes>
 			</Suspense>
