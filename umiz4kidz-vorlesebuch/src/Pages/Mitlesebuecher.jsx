@@ -18,7 +18,7 @@ const Mitlesebuecher = () => {
 				Go Back
 			</button>
 			<div className="title">
-				<h1>Wörterbücher</h1>
+				<h1>Mitlesebücher</h1>
 			</div>
 			<div className="buecher-container">
 				{mitlesebuecher.map((mitlesebuch) => (
