@@ -8,5 +8,10 @@
         "id": 1,
         "img": "https://data.umiz4kids.at/readingbooks/Buch2/0/2-HASE GEORG 0.jpeg",
         "slug": "Buch2"
+    },
+    {
+        "id": 2,
+        "img": "https://data.umiz4kids.at/readingbooks/Buch3/0/3-SIGMUND DIE SCHNECKE 0.jpeg",
+        "slug": "Buch3"
     }
 ]
