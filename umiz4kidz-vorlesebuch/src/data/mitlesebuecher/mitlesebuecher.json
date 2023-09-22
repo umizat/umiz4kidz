@@ -13,5 +13,10 @@
         "id": 2,
         "img": "https://data.umiz4kids.at/readingbooks/Buch3/0/3-SIGMUND DIE SCHNECKE 0.jpeg",
         "slug": "Buch3"
+    },
+    {
+        "id": 2,
+        "img": "https://data.umiz4kids.at/readingbooks/Buch4/0/4-FEENLAND 0.jpeg",
+        "slug": "Buch4"
     }
 ]
