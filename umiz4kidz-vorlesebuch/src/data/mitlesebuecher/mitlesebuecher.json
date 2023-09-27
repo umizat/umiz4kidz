@@ -15,8 +15,13 @@
         "slug": "Buch3"
     },
     {
-        "id": 2,
+        "id": 3,
         "img": "https://data.umiz4kids.at/readingbooks/Buch4/0/4-FEENLAND 0.jpeg",
         "slug": "Buch4"
+    },
+    {
+        "id": 4,
+        "img": "https://data.umiz4kids.at/readingbooks/Buch5/0/5-ZOO 0.jpeg",
+        "slug": "Buch5"
     }
 ]
