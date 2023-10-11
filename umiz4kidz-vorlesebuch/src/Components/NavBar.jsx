@@ -6,26 +6,27 @@ const NavBar = () => {
 		<div>
 			<nav>
 				<div className="nav-items container">
+					
 					<div className="logo">
 						<a href="/">
-							<h1>umiz4kids</h1>
+							<img src="szimu klein.jpg" alt="Szimu" />
 						</a>
 					</div>
 					<ul>
 						<li>
-							<NavLink to="/">Home</NavLink>
+							<NavLink to="/about">Über uns</NavLink>
 						</li>
 						<li>
-							<NavLink to="/about">About</NavLink>
+							<NavLink to="/vorlesebuecher">Vorlesebücher</NavLink>
 						</li>
 						<li>
-							<NavLink to="/vorlesebuecher">Vorlesebuecher</NavLink>
-						</li>
-						<li>
-							<NavLink to="/mitlesebuecher">Mitlesebuecher</NavLink>
+							<NavLink to="/mitlesebuecher">Mitlesebücher</NavLink>
 						</li>
 						<li>
 							<NavLink to="/woerterbuecher">Wörterbücher</NavLink>
+						</li>
+						<li>
+							<NavLink to="/vokabeltrainer">Vokabeltrainer</NavLink>
 						</li>
 					</ul>
 				</div>

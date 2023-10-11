@@ -8,7 +8,7 @@
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Comic Sans MS', sans-serif;
 	font-size: 16px;
 	background: white;
 	overflow: auto;
@@ -31,7 +31,8 @@ img {
 	/* max-width: 1200px; */
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 60px;
+	margin: 60px;
 }
 
 .container .btn {
@@ -65,6 +66,8 @@ nav .nav-items {
 	justify-content: space-between;
 	height: 100%;
 	align-items: center;
+	
+	
 }
 
 .nav-items ul {
@@ -103,8 +106,7 @@ nav .nav-items {
 }
 
 .banner {
-	font-family: 'Lovers Quarrel', cursive;
-	font-size: 100px;
+	font-size: 50px;
 	background: #fff;
 	padding: 0 20px;
 	width: 100%;
@@ -117,7 +119,6 @@ nav .nav-items {
 }
 
 .banner-container .btn {
-	font-family: 'Poppins', sans-serif;
 	background: #00a8ff;
 	color: #fff;
 	padding: 10px 20px;
@@ -292,3 +293,22 @@ nav .nav-items {
 	 background-color: rgba(0, 0, 0, 0.05); 
   }
   
+
+  h2{font-size: 30px};
+
+
+.Kategorie {
+	margin: -120px -80px -50px 0px;
+}
+
+.banner {
+	display: flex;
+	justify-content: space-between; /* Gleichmäßige Aufteilung der Elemente */
+  }
+
+  
+  .link-div {
+	width: 25%; /* Jedes Element erhält 25% der Breite */
+  }
+  
+	

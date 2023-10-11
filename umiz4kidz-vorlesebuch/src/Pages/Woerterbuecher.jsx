@@ -15,7 +15,7 @@ const Woerterbuecher = () => {
 	return (
 		<div className="container">
 			<button className="btn" onClick={() => navigate(-1)}>
-				Go Back
+				zurück
 			</button>
 			<div className="title">
 				<h1>Wörterbücher</h1>
