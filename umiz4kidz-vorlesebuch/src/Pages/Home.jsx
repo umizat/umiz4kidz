@@ -3,15 +3,14 @@ import { Link } from 'react-router-dom';
 const Home = () => {
 	return (
 		<div className="container">
-			<div className="banner-container">
 				<div className="banner">
 					
 					{/* First Link and Div */}
 					<div className="link-div">
-						<h2>Vorlesebücher</h2>
+						
 						<Link to="/vorlesebücher">
 							<div className="btn">
-								<img src="szimu.jpg" alt="Zimu" />
+								<img src="vorlesebücher.jpg" alt="Vorlesebücher" />
 								Vorlesebücher
 							</div>
 						</Link>
@@ -19,30 +18,39 @@ const Home = () => {
 
 					{/* Second Link and Div */}
 					<div className="link-div">
-						<h2>Hier sind die</h2>
-						<Link to="/woerterbücher">
-							<div className="btn">Wörterbücher</div>
+						
+						<Link to="/mitlesebücher">
+							<div className="btn">
+							<img src="Mitlesebucher.jpg" alt="Mitlesebücher" />
+								
+						Mitlesebücher
+						
+						</div>
 						</Link>
 					</div>
 
 					{/* Third Link and Div */}
 					<div className="link-div">
-						<h2>Hier sind die</h2>
-						<Link to="/mitlesebücher">
-							<div className="btn">Mitlesebücher</div>
+						
+						<Link to="/wörterbücher">
+							<div className="btn">
+								<img src="wörterbücher.jpg" alt="Wörterbücher" />
+								Wörterbücher
+							</div>
 						</Link>
 					</div>
-
 					{/* Fourth Link and Div */}
 					<div className="link-div">
-						<h2>Hier sind die</h2>
+						
 						<Link to="/vokabeltrainer">
-							<div className="btn">Vokabeltrainer</div>
+							<div className="btn">
+								<img src="vokabeltrainer.jpg" alt="Vokabeltrainer" />
+								Vokabeltrainer
+							</div>
 						</Link>
 					</div>
 				</div>
 			</div>
-		</div>
 	);
 };
 

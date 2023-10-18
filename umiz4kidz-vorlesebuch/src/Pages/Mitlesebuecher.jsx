@@ -14,9 +14,7 @@ const Mitlesebuecher = () => {
 
 	return (
 		<div className="container">
-			<button className="btn" onClick={() => navigate(-1)}>
-				zurück
-			</button>
+			
 			<div className="title">
 				<h1>Mitlesebücher</h1>
 			</div>

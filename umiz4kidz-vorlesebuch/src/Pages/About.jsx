@@ -4,9 +4,7 @@ const About = () => {
 	const navigate = useNavigate();
 	return (
 		<div className="container">
-			<button className="btn" onClick={() => navigate(-1)}>
-				zurück
-			</button>
+			
 			<div className="title">
 				<h1>Über umiz4kids</h1>
 			</div>
