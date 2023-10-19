@@ -9,7 +9,7 @@ const NavBar = () => {
 					
 					<div className="logo">
 						<a href="/">
-							<img src="szimu klein.jpg" alt="Szimu" />
+							<img src="https://umiz4kids.at/szimu%20klein.jpg" alt="Szimu" />
 						</a>
 					</div>
 					<ul>
