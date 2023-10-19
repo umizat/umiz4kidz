@@ -31,12 +31,16 @@ function App() {
 			</Suspense>
 			<div className='footer'>
 				
-				
+			<a href="/">
+							<img src="umizfoto.jpg" alt="UMIZ" height="50" width="50" class="padding"/>
+						</a>
 				UMIZ - Ungarisches Medien- und Informationszentrum Beirat für mehrsprachige Kindergartenpädagogik
 7502 Unterwart, Marienplatz 3
-www.umiz at - umizmail@gmail.com
-Gefördert aus Mitteln der Volksgruppenförderung des Bundeskanzleramtes
-
+www.umiz at - umizmail@gmail.com - <a href="/">Impressum und Datenschutzerklärung
+												</a> 
+<br></br>
+<h5>Gefördert aus Mitteln der Volksgruppenförderung des Bundeskanzleramtes
+</h5>
 			</div>
 		</>
 	);

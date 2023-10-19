@@ -76,6 +76,7 @@ h1 {text-align: center;
 h3 {text-align: center;
 	color:  #184B8C;
 	font-size: 50px;
+	margin: 40px;
 }
 
 
@@ -89,15 +90,33 @@ h4{text-align: center;
 
 }
 
+
+h5 {text-align: center;
+		font-size: 12px;
+		font-weight: bold;
+	
+	
+	}
+
+
+
 .footer {
 	
 	left: 0;
 	bottom: 0;
-	 width: 100%;
-	 background-color: red;
-	color: white;
+color: #000000;
 	text-align: center;
-	}
+	margin: 50px 100px 50px 100px;
+	font-family: 'Times New Roman', Times, serif;
+font-size: 13px;
+
+
+}
+
+.padding
+{padding-right: 10px;
+}
+
 
 nav .nav-items {
 	display: flex;

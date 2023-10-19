@@ -5,7 +5,7 @@ const Home = () => {
 		<div className="container">
 			<h3>free E-learning</h3>
 			<h2>Spielerische Mehrsprachigkeit</h2><br />
-			<h4>Játékos többnyelvüség</h4>
+			<h4>Játékos többnyelvűség</h4>
 				
 				<div className="banner">
 					
