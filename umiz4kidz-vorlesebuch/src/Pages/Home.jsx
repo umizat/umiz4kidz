@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 const Home = () => {
 	return (
 		<div className="container">
+			<h3>free E-learning</h3>
+			<h2>Spielerische Mehrsprachigkeit</h2><br />
+			<h4>Játékos többnyelvüség</h4>
+				
 				<div className="banner">
 					
 					{/* First Link and Div */}
@@ -50,7 +54,13 @@ const Home = () => {
 						</Link>
 					</div>
 				</div>
-			</div>
+
+
+				
+</div>
+	
+	
+	
 	);
 };
 

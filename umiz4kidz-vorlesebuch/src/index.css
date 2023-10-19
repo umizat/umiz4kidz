@@ -12,11 +12,13 @@ body {
 	font-size: 16px;
 	background: white;
 	overflow: auto;
+	height: 100%;
 }
 
 a {
 	text-decoration: none;
 	text-align: center;
+
 }
 
 ul {
@@ -63,10 +65,39 @@ nav {
 }
 
 .logo h1 {
-	color: #0097e6;
+	color: #07519A;
 }
 
-h1 {text-align: center;}
+h1 {text-align: center;
+	color:  #B20000;
+}
+
+
+h3 {text-align: center;
+	color:  #184B8C;
+	font-size: 50px;
+}
+
+
+h2{text-align: center;
+	color:  #1B952E;
+	font-size: 30px;}
+
+h4{text-align: center;
+	color:  #A226BC;
+	font-size: 30px;
+
+}
+
+.footer {
+	
+	left: 0;
+	bottom: 0;
+	 width: 100%;
+	 background-color: red;
+	color: white;
+	text-align: center;
+	}
 
 nav .nav-items {
 	display: flex;
@@ -95,11 +126,11 @@ nav .nav-items {
 }
 
 .nav-items ul li a:hover {
-	color: #00a8ff;
+	color: #A226BC;
 }
 
 .nav-items ul li a.active {
-	color: #00a8ff;
+	color: #B20000;
 }
 
 
@@ -108,7 +139,7 @@ nav .nav-items {
 	background: #fff;
 	padding: 0 20px;
 	width: 100%;
-	height: 50vh;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -116,7 +147,7 @@ nav .nav-items {
 }
 
 .banner-container .btn {
-	background: #00a8ff;
+	background: #07519A;
 	color: #fff;
 	padding: 10px 20px;
 	border-radius: 5px;
@@ -126,11 +157,11 @@ nav .nav-items {
 }
 
 .banner-container .btn:hover {
-	background: #0097e6;
+	background: #07519A;
 }
 
 .container .title {
-	color: #00a8ff;
+	color: #07519A;
 	font-size: 30px;
 	font-weight: 600;
 	margin: 40px 0;
@@ -187,7 +218,7 @@ nav .nav-items {
 }
 
 .buch-info .btn {
-	background: #00a8ff;
+	background: #07519A;
 	color: #fff;
 	border: none;
 	padding: 5px 10px;
@@ -198,7 +229,7 @@ nav .nav-items {
 }
 
 .buch-info .btn:hover {
-	background: #0097e6;
+	background: #07519A;
 }
 
 
@@ -302,7 +333,7 @@ nav .nav-items {
   }
   
 
-  h2{font-size: 30px};
+  
 
 
 .Kategorie {
@@ -320,7 +351,7 @@ nav .nav-items {
   
   .link-div {
 	width: 49.99%; 
-	padding-bottom: 50px;/* Jedes Element erhält 25% der Breite */
+	padding-bottom: 50px;
   }
   
 

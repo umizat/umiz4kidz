@@ -29,6 +29,15 @@ function App() {
 				    <Route path="*" element={<NoMatch />} />
 				</Routes>
 			</Suspense>
+			<div className='footer'>
+				
+				
+				UMIZ - Ungarisches Medien- und Informationszentrum Beirat für mehrsprachige Kindergartenpädagogik
+7502 Unterwart, Marienplatz 3
+www.umiz at - umizmail@gmail.com
+Gefördert aus Mitteln der Volksgruppenförderung des Bundeskanzleramtes
+
+			</div>
 		</>
 	);
 }
