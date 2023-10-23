@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
 
 * {
-	margin: 0;
+	margin: 0px;
 	padding: 0;
 	box-sizing: border-box;
 }
@@ -188,16 +188,17 @@ nav .nav-items {
 
 .buecher-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	grid-gap: 30px;
 	margin: 70px 20px 0px 20px;
 }
 
 .wbbuecher-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	grid-template-columns: 1fr 1fr;
+	/*grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));*/
 	grid-gap: 30px;
-	margin: 20px 0;
+	margin-left: 120px;
 }
 
 .buecher-container .buch-card {
