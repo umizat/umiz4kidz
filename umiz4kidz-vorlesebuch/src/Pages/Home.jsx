@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 const Home = () => {
 	return (
 		<div className="container">
-			<h3>free E-learning</h3>
-			<h2>Spielerische Mehrsprachigkeit: Ungarisch und Kroatisch kinderleicht erfahren</h2><br />
+			
+			<h2>Spielerische Mehrsprachigkeit: Ungarisch und Kroatisch kinderleicht erlernen</h2><br />
 			<h4>Játékos többnyelvűség</h4>
 				
 				<div className="banner">
