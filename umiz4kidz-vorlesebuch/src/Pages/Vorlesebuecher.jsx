@@ -17,6 +17,7 @@ const Vorlesebuecher = () => {
 			
 			<div className="title">
 				<h1>Vorlesebücher</h1>
+				<h4>Lass dir Kinderbücher in den drei Sprachen Ungarisch, Burgenland-Kroatisch und Deutsch vorlesen. Tippe auf den Text!</h4>
 			</div>
 			<div className="buecher-container">
 				{vorlesebuecher.map((vorlesebuch) => (

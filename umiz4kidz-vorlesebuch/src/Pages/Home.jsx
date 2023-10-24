@@ -4,8 +4,12 @@ const Home = () => {
 	return (
 		<div className="container">
 			
-			<h2>Spielerische Mehrsprachigkeit: Ungarisch und Kroatisch kinderleicht erlernen</h2><br />
-			<h4>Játékos többnyelvűség</h4>
+			<h1>Ungarisch und Burgernland-Kroatisch (lila) spielerisch kennenlernen (blau)</h1><br />
+			<h1>Ungarischer text</h1><br></br>
+			<h1>Kroatischer Text</h1>
+
+
+			
 				
 				<div className="banner">
 					

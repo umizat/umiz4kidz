@@ -17,6 +17,7 @@ const Mitlesebuecher = () => {
 			
 			<div className="title">
 				<h1>Mitlesebücher</h1>
+				<p>Lass dir das Kinderbuch vorlesen und mach mit. Tippe auf das Symbol!</p>
 			</div>
 			<div className="buecher-container">
 				{mitlesebuecher.map((mitlesebuch) => (
