@@ -500,9 +500,9 @@ nav .nav-items {
 }
 
 .umizFooter{
-	width: 100px;
+	width: 100px !important;
 }
 .bkaFooter{
-	width: 180px;
+	width: 180px !important;
 
 }
