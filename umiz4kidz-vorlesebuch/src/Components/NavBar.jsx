@@ -12,7 +12,7 @@ const NavBar = () => {
 					
 						
 						<a href="/" className="my-a-class">
-							<img src="szimu klein.jpg" alt="Zimu" />umiz4kids
+							<img src="https://umiz4kids.at/szimu%20klein.jpg" alt="Zimu" />umiz4kids
 						</a>
 					</div>
 					<ul>
