@@ -47,7 +47,7 @@ img {
 .container {
 	/* max-width: 1200px; */
 	width: 100%;
-	margin: 0 auto;
+	margin: 30px auto;
 }
 
 .container .btn {
@@ -73,9 +73,25 @@ nav {
 	height: fit-content
 }
 
-.logo h1 {
-	color: #07519A;
+.logo {
+	vertical-align: middle;
+	color:  #184B8C;
+	font-size: 40px;
+	height: 90px;
+	
+
 }
+
+
+.logo a {
+	vertical-align: middle;
+	color:  #184B8C;
+	font-size: 40px;
+	height: 90px;
+	
+
+}
+
 
 h1 {text-align: center;
 	color:  #184B8C;
@@ -466,3 +482,8 @@ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	width: 200px;
 	height: 270px;
   }
+
+
+  .my-a-class {display: flex;
+	align-items: center;
+	justify-content: space-between;}

@@ -35,7 +35,7 @@ function App() {
 			<div className='footer'>
 				
 			<a href="/">
-							<img src="umizfoto.jpg" alt="UMIZ" height="70" width="100" class="padding"/>
+							<img src="umizfoto.jpg" alt="UMIZ" width="100px"/>
 						</a>
 						<br></br>
 				UMIZ - Ungarisches Medien- und Informationszentrum / Beirat für mehrsprachige Kindergartenpädagogik <br></br>
@@ -48,7 +48,7 @@ www.umiz at - umizmail@gmail.com <br>
  <a href="/">Impressum und Datenschutzerklärung
 												</a> 
 <br></br>
-<img src="logo-ministerium.png" alt='Logo-Bundeskanzleramt' height="90" width="180"/><h5>Gefördert aus Mitteln der Volksgruppenförderung des Bundeskanzleramtes
+<img src="logo-ministerium.png" alt='Logo-Bundeskanzleramt' width="180px"/><h5>Gefördert aus Mitteln der Volksgruppenförderung des Bundeskanzleramtes
 </h5>
 			</div>
 		</>

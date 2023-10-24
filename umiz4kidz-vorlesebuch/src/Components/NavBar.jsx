@@ -8,8 +8,11 @@ const NavBar = () => {
 				<div className="nav-items container">
 					
 					<div className="logo">
-						<a href="/">
-							<img src="zimu-leiste.jpg" alt="Zimu" />
+						
+					
+						
+						<a href="/" className="my-a-class">
+							<img src="szimu klein.jpg" alt="Zimu" />umiz4kids
 						</a>
 					</div>
 					<ul>
