@@ -17,6 +17,7 @@ const Woerterbuecher = () => {
 			
 			<div className="title">
 				<h1>Wörterbücher</h1>
+				<p>Wie hörsen sich die Wörter in fünf Sprachen an? Tippe auf das Symbol!</p>
 			</div>
 			<div className="wbbuecher-container">
 				{woerterbuecher.map((woerterbuech) => (

@@ -9,12 +9,12 @@ const NavBar = () => {
 					
 					<div className="logo">
 						<a href="/">
-							<img src="https://umiz4kids.at/szimu%20klein.jpg" alt="Zimu" />
+							<img src="zimu-leiste.jpg" alt="Zimu" />
 						</a>
 					</div>
 					<ul>
 						<li>
-							<NavLink to="/about">Über uns</NavLink>
+							<NavLink to="/about">Über das Projekt</NavLink>
 						</li>
 						<li>
 							<NavLink to="/vorlesebuecher">Vorlesebücher</NavLink>

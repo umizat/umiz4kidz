@@ -4,9 +4,9 @@ const Home = () => {
 	return (
 		<div className="container">
 			
-			<h1>Ungarisch und Burgernland-Kroatisch (lila) spielerisch kennenlernen (blau)</h1><br />
-			<h1>Ungarischer text</h1><br></br>
-			<h1>Kroatischer Text</h1>
+			<h1>Ungarisch und Burgernland-Kroatisch spielerisch kennenlernen</h1>
+			<h2>Ungarischer text</h2>
+			<h3>Kroatischer Text</h3>
 
 
 			
@@ -16,7 +16,7 @@ const Home = () => {
 					{/* First Link and Div */}
 					<div className="link-div">
 						
-						<Link to="/vorlesebücher">
+						<Link to="/vorlesebuecher">
 							<div className="btn">
 								<img src="vorlesebücher.jpg" alt="Vorlesebücher" />
 								Vorlesebücher
@@ -27,7 +27,7 @@ const Home = () => {
 					{/* Second Link and Div */}
 					<div className="link-div">
 						
-						<Link to="/mitlesebücher">
+						<Link to="/mitlesebuecher">
 							<div className="btn">
 							<img src="Mitlesebucher.jpg" alt="Mitlesebücher" />
 								
@@ -40,7 +40,7 @@ const Home = () => {
 					{/* Third Link and Div */}
 					<div className="link-div">
 						
-						<Link to="/wörterbücher">
+						<Link to="/woerterbuecher">
 							<div className="btn">
 								<img src="wörterbücher.jpg" alt="Wörterbücher" />
 								Wörterbücher

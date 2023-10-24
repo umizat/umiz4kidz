@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './Components/NavBar';
+import WordTrainer from './Components/WordTrainer';
 const Home = lazy(() => import('./Pages/Home'));
 const About = lazy(() => import('./Pages/About'));
 const Vorlesebuecher = lazy(() => import('./Pages/Vorlesebuecher'));
@@ -26,20 +27,28 @@ function App() {
 					<Route path="/woerterbuecher/:slug/:page" element={<Woerterbuch />} />
 					<Route path="/mitlesebuecher" element={<Mitlesebuecher />} />
 					<Route path="/mitlesebuecher/:slug/:page" element={<Mitlesebuch />} />
+					<Route path="/vokabeltrainer" element={<WordTrainer />} />
+					<Route path="/vokabletrainer/:slug/:page" element={<WordTrainer />} />
 				    <Route path="*" element={<NoMatch />} />
 				</Routes>
 			</Suspense>
 			<div className='footer'>
 				
 			<a href="/">
-							<img src="umizfoto.jpg" alt="UMIZ" height="50" width="50" class="padding"/>
+							<img src="umizfoto.jpg" alt="UMIZ" height="70" width="100" class="padding"/>
 						</a>
-				UMIZ - Ungarisches Medien- und Informationszentrum Beirat für mehrsprachige Kindergartenpädagogik
+						<br></br>
+				UMIZ - Ungarisches Medien- und Informationszentrum / Beirat für mehrsprachige Kindergartenpädagogik <br></br>
 7502 Unterwart, Marienplatz 3
-www.umiz at - umizmail@gmail.com - <a href="/">Impressum und Datenschutzerklärung
+www.umiz at - umizmail@gmail.com <br>
+</br>
+
+
+
+ <a href="/">Impressum und Datenschutzerklärung
 												</a> 
 <br></br>
-<h5>Gefördert aus Mitteln der Volksgruppenförderung des Bundeskanzleramtes
+<img src="logo-ministerium.png" alt='Logo-Bundeskanzleramt' height="90" width="180"/><h5>Gefördert aus Mitteln der Volksgruppenförderung des Bundeskanzleramtes
 </h5>
 			</div>
 		</>
