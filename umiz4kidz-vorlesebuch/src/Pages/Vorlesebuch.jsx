@@ -4,21 +4,23 @@ import ImageWithMap from '../Components/ImageWithMap';
 
 const Vorlesebuch = () => {
   const [vorlesebuch, setVorlesebuch] = useState([]);
-
   const { slug } = useParams();
-  const { page } = useParams();
+  let { page } = useParams();
 
   useEffect(() => {
-    const fetchVorlesebuch = async () => {
-      let URL = `https://data.umiz4kids.at/books/${slug}/data.json`;
-      let response = await fetch(URL);
-      let data = await response.json();
-      setVorlesebuch(data);
-    };
-    fetchVorlesebuch();
-  }, [slug]);
-
-
+    if (typeof page === 'undefined') {
+      // Redirect to the default page, e.g., page 0
+      window.location.href = `/vorlesebuecher/${slug}/0`;
+    } else {
+      const fetchVorlesebuch = async () => {
+        let URL = `https://data.umiz4kids.at/books/${slug}/data.json`;
+        let response = await fetch(URL);
+        let data = await response.json();
+        setVorlesebuch(data);
+      };
+      fetchVorlesebuch();
+    }
+  }, [slug, page]);
 
   return (
     <div className="container">

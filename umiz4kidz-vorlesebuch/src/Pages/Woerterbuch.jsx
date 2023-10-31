@@ -9,13 +9,18 @@ const Woerterbuch = () => {
   const { page } = useParams();
 
   useEffect(() => {
-    const fetchWoerterbuch = async () => {
-      let URL = `https://data.umiz4kids.at/dictionary/${slug}/data.json`;
-      let response = await fetch(URL);
-      let data = await response.json();
-      setWoerterbuch(data);
-    };
-    fetchWoerterbuch();
+    if (typeof page === 'undefined') {
+      // Redirect to the default page, e.g., page 0
+      window.location.href = `/woerterbuecher/${slug}/0`;
+    } else {
+      const fetchWoerterbuch = async () => {
+        let URL = `https://data.umiz4kids.at/dictionary/${slug}/data.json`;
+        let response = await fetch(URL);
+        let data = await response.json();
+        setWoerterbuch(data);
+      };
+      fetchWoerterbuch();
+    }
   }, [slug]);
 
 

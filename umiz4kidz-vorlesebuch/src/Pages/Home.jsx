@@ -50,7 +50,7 @@ const Home = () => {
 					{/* Fourth Link and Div */}
 					<div className="link-div">
 						
-						<Link to="/vokabeltrainer">
+						<Link to="/vokabeltrainer/0">
 							<div className="btn">
 								<img src="vokabeltrainer.jpg" alt="Vokabeltrainer" />
 								Vokabeltrainer

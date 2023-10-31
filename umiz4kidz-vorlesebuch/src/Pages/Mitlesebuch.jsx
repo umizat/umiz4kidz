@@ -9,13 +9,18 @@ const Mitlesebuch = () => {
   const { page } = useParams();
 
   useEffect(() => {
-    const fetchMitlesebuch = async () => {
-      let URL = `https://data.umiz4kids.at/readingbooks/${slug}/data.json`;
-      let response = await fetch(URL);
-      let data = await response.json();
-      setMitlesebuch(data);
-    };
-    fetchMitlesebuch();
+    if (typeof page === 'undefined') {
+      // Redirect to the default page, e.g., page 0
+      window.location.href = `/mitlesebuecher/${slug}/0`;
+    } else {
+      const fetchMitlesebuch = async () => {
+        let URL = `https://data.umiz4kids.at/readingbooks/${slug}/data.json`;
+        let response = await fetch(URL);
+        let data = await response.json();
+        setMitlesebuch(data);
+      };
+      fetchMitlesebuch();
+    }
   }, [slug]);
 
 

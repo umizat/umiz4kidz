@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './Components/NavBar';
-import WordTrainer from './Components/WordTrainer';
+import Vokabeltrainer from './Pages/Vokabeltrainer';
 const Home = lazy(() => import('./Pages/Home'));
 const About = lazy(() => import('./Pages/About'));
 const Vorlesebuecher = lazy(() => import('./Pages/Vorlesebuecher'));
@@ -23,12 +23,15 @@ function App() {
 					<Route path="/about" element={<About />} />
 					<Route path="/vorlesebuecher" element={<Vorlesebuecher />} />
 					<Route path="/vorlesebuecher/:slug/:page" element={<Vorlesebuch />} />
+					<Route path="/vorlesebuecher/:slug" element={<Vorlesebuch />} />
 					<Route path="/woerterbuecher" element={<Woerterbuecher />} />
+					<Route path="/woerterbuecher/:slug" element={<Woerterbuch />} />
 					<Route path="/woerterbuecher/:slug/:page" element={<Woerterbuch />} />
 					<Route path="/mitlesebuecher" element={<Mitlesebuecher />} />
+					<Route path="/mitlesebuecher/:slug" element={<Mitlesebuch />} />
 					<Route path="/mitlesebuecher/:slug/:page" element={<Mitlesebuch />} />
-					<Route path="/vokabeltrainer" element={<WordTrainer />} />
-					<Route path="/vokabletrainer/:slug/:page" element={<WordTrainer />} />
+					<Route path="/vokabeltrainer" element={<Vokabeltrainer />} />
+					<Route path="/vokabeltrainer/:slug" element={<Vokabeltrainer />} />
 				    <Route path="*" element={<NoMatch />} />
 				</Routes>
 			</Suspense>

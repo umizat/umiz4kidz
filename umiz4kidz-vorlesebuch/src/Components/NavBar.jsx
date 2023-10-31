@@ -29,7 +29,7 @@ const NavBar = () => {
 							<NavLink to="/woerterbuecher">Wörterbücher</NavLink>
 						</li>
 						<li>
-							<NavLink to="/vokabeltrainer">Vokabeltrainer</NavLink>
+							<NavLink to="/vokabeltrainer/1">Vokabeltrainer</NavLink>
 						</li>
 					</ul>
 				</div>
