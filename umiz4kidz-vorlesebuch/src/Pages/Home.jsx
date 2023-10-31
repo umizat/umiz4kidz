@@ -5,7 +5,7 @@ const Home = () => {
 		<div className="container">
 			
 			<h1>Ungarisch und Burgernland-Kroatisch spielerisch kennenlernen</h1>
-			<h2>Ungarischer text</h2>
+			<h2>Magyar és horvát nyelvvel való játékos ismerkedés</h2>
 			<h3>Kroatischer Text</h3>
 
 

@@ -6,18 +6,18 @@ const NavBar = () => {
 		<div>
 			<nav>
 				<div className="nav-items container">
-					
+
 					<div className="logo">
-						
-					
-						
+
+
+
 						<a href="/" className="my-a-class">
-							<img src="https://umiz4kids.at/szimu%20klein.jpg" alt="Zimu" />umiz4kids
+							<img src="https://umiz4kids.at/szimu%20klein.jpg" alt="Zimu" /><h4>umiz4kids</h4>
 						</a>
 					</div>
 					<ul>
 						<li>
-							<NavLink to="/about">Über das Projekt</NavLink>
+							<NavLink to="/about">Das Projekt</NavLink>
 						</li>
 						<li>
 							<NavLink to="/vorlesebuecher">Vorlesebücher</NavLink>

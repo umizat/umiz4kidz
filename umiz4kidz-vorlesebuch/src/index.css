@@ -15,13 +15,14 @@ body {
 	overflow: auto;
 	height: 100%;
 	font-weight: 700;
+	color: #184B8C;
 }
 
 p {
 	font-family: 'Comic Neue', sans-serif;
 	font-size: 16px;
 	text-align: center;
-	color: #000;
+	/*color: #000;*/
 	margin: 20px;
 	font-weight: 700;
 }
@@ -51,7 +52,7 @@ img {
 .container {
 	/* max-width: 1200px; */
 	width: 100%;
-	margin: 30px auto;
+	/*margin: 30px auto;*/
 }
 
 .container .btn {
@@ -72,7 +73,7 @@ img {
 
 nav {
 	background: #fff;
-	margin: 0 100px 0 100px;
+	margin: 0 10px 0 0px;
 	/*width: 100%;*/
 	height: fit-content
 }
@@ -120,6 +121,12 @@ h3 {
 	margin: 20px;
 }
 
+
+/*logoumiz4kids*/
+h4 {text-align: left;
+	color: #184B8C;
+	font-size: 25px;
+}
 
 h5 {
 	text-align: center;
@@ -172,7 +179,7 @@ nav .nav-items {
 }
 
 .nav-items ul li a {
-	color: #000;
+	color: #184B8C;
 }
 
 .nav-items ul li a:hover {
@@ -433,7 +440,6 @@ nav .nav-items {
 .scene {
 	width: 90px;
 	height: 90px;
-	border: 1px solid #CCC;
 	margin: 0;
 	perspective: 600px;
 }
@@ -466,32 +472,12 @@ nav .nav-items {
 
 .card__face--back {
 	transform: rotateY(180deg);
-}
-
-.headimage {
-	width: 180px;
-	text-align: center;
+	z-index: 999;
 }
 
 .secondCard {
 	margin-left: 90px;
 	margin-top: -90px;
-}
-
-.grid-container {
-	display: grid;
-	grid-template-columns: auto auto;
-	gap: 50px;
-}
-
-.grid-item {
-	text-align: center;
-	justify-content: center;
-}
-
-.vokabel {
-	width: 200px;
-	height: 270px;
 }
 
 
@@ -509,4 +495,26 @@ nav .nav-items {
 	width: 180px;
 	height: 32px;
 
+}
+
+
+.headimage img{
+	height: 150px;
+}
+
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 50px;
+}
+
+.grid-item {
+	text-align: center;
+	justify-content: center;
+	margin:0 auto;
+}
+
+.vokabel {
+	width: fit-content;
 }
