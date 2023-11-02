@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import vokabeljson from '../data/vokabeltrainer/vokabeln.json';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
@@ -133,30 +133,31 @@ function WordTrainer() {
 
   return (
     <div>
-
       <div className="grid-container">
         <div className="grid-item">
           <div className="vokabel">
             <div className="headimage">
-              <img src={image1} alt="Apfel" />
+              <img src={image1} alt="" />
             </div>
-            <div className="scene scene--card">
-              <div className={`card ${!isFrontDe1 ? 'is-flipped' : ''}`} onClick={handleFlipDE1}>
-                <div className="card__face card__face--front">
-                  <img src="/images/frontDe.jpg" alt="Front Side" />
-                </div>
-                <div className="card__face card__face--back">
-                  <img src={descDe1} alt="Back Side" />
+            <div className="flags">
+              <div className="scene scene--card">
+                <div className={`card ${!isFrontDe1 ? 'is-flipped' : ''}`} onClick={handleFlipDE1}>
+                  <div className="card__face card__face--front">
+                    <img src="/images/frontDe.jpg" alt="Front Side" />
+                  </div>
+                  <div className="card__face card__face--back">
+                    <img src={descDe1} alt="Back Side" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="scene scene--card secondCard">
-              <div className={`card ${!isFrontHu1 ? 'is-flipped' : ''}`} onClick={handleFlipHU1}>
-                <div className="card__face card__face--front">
-                  <img src="/images/frontHu.jpg" alt="Front Side" />
-                </div>
-                <div className="card__face card__face--back">
-                  <img src={descHu1} alt="Back Side" />
+              <div className="scene scene--card secondCard">
+                <div className={`card ${!isFrontHu1 ? 'is-flipped' : ''}`} onClick={handleFlipHU1}>
+                  <div className="card__face card__face--front">
+                    <img src="/images/frontHu.jpg" alt="Front Side" />
+                  </div>
+                  <div className="card__face card__face--back">
+                    <img src={descHu1} alt="Back Side" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -167,23 +168,25 @@ function WordTrainer() {
             <div className="headimage">
               <img src={image2} alt="Apfel" />
             </div>
-            <div className="scene scene--card">
-              <div className={`card ${!isFrontDe2 ? 'is-flipped' : ''}`} onClick={handleFlipDE2}>
-                <div className="card__face card__face--front">
-                  <img src="/images/frontDe.jpg" alt="Front Side" />
-                </div>
-                <div className="card__face card__face--back">
-                  <img src={descDe2} alt="Back Side" />
+            <div className="flags">
+              <div className="scene scene--card">
+                <div className={`card ${!isFrontDe2 ? 'is-flipped' : ''}`} onClick={handleFlipDE2}>
+                  <div className="card__face card__face--front">
+                    <img src="/images/frontDe.jpg" alt="Front Side" />
+                  </div>
+                  <div className="card__face card__face--back">
+                    <img src={descDe2} alt="Back Side" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="scene scene--card secondCard">
-              <div className={`card ${!isFrontHu2 ? 'is-flipped' : ''}`} onClick={handleFlipHU2}>
-                <div className="card__face card__face--front">
-                  <img src="/images/frontHu.jpg" alt="Front Side" />
-                </div>
-                <div className="card__face card__face--back">
-                  <img src={descHu2} alt="Back Side" />
+              <div className="scene scene--card secondCard">
+                <div className={`card ${!isFrontHu2 ? 'is-flipped' : ''}`} onClick={handleFlipHU2}>
+                  <div className="card__face card__face--front">
+                    <img src="/images/frontHu.jpg" alt="Front Side" />
+                  </div>
+                  <div className="card__face card__face--back">
+                    <img src={descHu2} alt="Back Side" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -194,23 +197,25 @@ function WordTrainer() {
             <div className="headimage">
               <img src={image3} alt="Apfel" />
             </div>
-            <div className="scene scene--card">
-              <div className={`card ${!isFrontDe3 ? 'is-flipped' : ''}`} onClick={handleFlipDE3}>
-                <div className="card__face card__face--front">
-                  <img src="/images/frontDe.jpg" alt="Front Side" />
-                </div>
-                <div className="card__face card__face--back">
-                  <img src={descDe3} alt="Back Side" />
+            <div className="flags">
+              <div className="scene scene--card">
+                <div className={`card ${!isFrontDe3 ? 'is-flipped' : ''}`} onClick={handleFlipDE3}>
+                  <div className="card__face card__face--front">
+                    <img src="/images/frontDe.jpg" alt="Front Side" />
+                  </div>
+                  <div className="card__face card__face--back">
+                    <img src={descDe3} alt="Back Side" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="scene scene--card secondCard">
-              <div className={`card ${!isFrontHu3 ? 'is-flipped' : ''}`} onClick={handleFlipHU3}>
-                <div className="card__face card__face--front">
-                  <img src="/images/frontHu.jpg" alt="Front Side" />
-                </div>
-                <div className="card__face card__face--back">
-                  <img src={descHu3} alt="Back Side" />
+              <div className="scene scene--card secondCard">
+                <div className={`card ${!isFrontHu3 ? 'is-flipped' : ''}`} onClick={handleFlipHU3}>
+                  <div className="card__face card__face--front">
+                    <img src="/images/frontHu.jpg" alt="Front Side" />
+                  </div>
+                  <div className="card__face card__face--back">
+                    <img src={descHu3} alt="Back Side" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -221,23 +226,25 @@ function WordTrainer() {
             <div className="headimage">
               <img src={image4} alt="Apfel" />
             </div>
-            <div className="scene scene--card">
-              <div className={`card ${!isFrontDe4 ? 'is-flipped' : ''}`} onClick={handleFlipDE4}>
-                <div className="card__face card__face--front">
-                  <img src="/images/frontDe.jpg" alt="Front Side" />
-                </div>
-                <div className="card__face card__face--back">
-                  <img src={descDe4} alt="Back Side" />
+            <div className="flags">
+              <div className="scene scene--card">
+                <div className={`card ${!isFrontDe4 ? 'is-flipped' : ''}`} onClick={handleFlipDE4}>
+                  <div className="card__face card__face--front">
+                    <img src="/images/frontDe.jpg" alt="Front Side" />
+                  </div>
+                  <div className="card__face card__face--back">
+                    <img src={descDe4} alt="Back Side" />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="scene scene--card secondCard">
-              <div className={`card ${!isFrontHu4 ? 'is-flipped' : ''}`} onClick={handleFlipHU4}>
-                <div className="card__face card__face--front">
-                  <img src="/images/frontHu.jpg" alt="Front Side" />
-                </div>
-                <div className="card__face card__face--back">
-                  <img src={descHu4} alt="Back Side" />
+              <div className="scene scene--card secondCard">
+                <div className={`card ${!isFrontHu4 ? 'is-flipped' : ''}`} onClick={handleFlipHU4}>
+                  <div className="card__face card__face--front">
+                    <img src="/images/frontHu.jpg" alt="Front Side" />
+                  </div>
+                  <div className="card__face card__face--back">
+                    <img src={descHu4} alt="Back Side" />
+                  </div>
                 </div>
               </div>
             </div>

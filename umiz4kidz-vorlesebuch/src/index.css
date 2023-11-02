@@ -233,10 +233,10 @@ nav .nav-items {
 
 .wbbuecher-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 	/*grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));*/
 	grid-gap: 30px;
-	margin-left: 120px;
+	margin: 70px 20px 0px 20px;
 }
 
 .buecher-container .buch-card {
@@ -258,8 +258,12 @@ nav .nav-items {
 	object-position: center;
 }
 
+.wbbuch-card {
+	margin: 0 auto;
+}
+
 .wbbuch-card .buch-img {
-	height: 400px;
+	height: 350px;
 	object-fit: cover;
 	object-position: center;
 }
@@ -438,10 +442,14 @@ nav .nav-items {
 
 
 .scene {
-	width: 90px;
-	height: 90px;
-	margin: 0;
+	width: 60px;
+	height: 60px;
 	perspective: 600px;
+	/* nebeneinander */
+	/*  margin: 0; */
+	/* untereinander */
+	/* margin: 0 auto; */
+	margin: auto;
 }
 
 .card {
@@ -455,6 +463,10 @@ nav .nav-items {
 
 .card.is-flipped {
 	transform: rotateY(180deg);
+}
+
+.secondCard.is-flipped {
+	transform: rotateY(-180deg);
 }
 
 .card__face {
@@ -476,6 +488,9 @@ nav .nav-items {
 }
 
 .secondCard {
+	/* nebeneinander */
+	/* margin-left: 60px;
+	margin-top: -60px; */
 }
 
 
@@ -497,7 +512,7 @@ nav .nav-items {
 
 
 .headimage img{
-	height: 150px;
+	height: 200px;
 }
 
 
@@ -514,5 +529,10 @@ nav .nav-items {
 }
 
 .vokabel {
-	width: fit-content;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.flags{
+	margin-top: 60px;
 }
