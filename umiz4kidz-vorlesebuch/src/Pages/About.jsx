@@ -26,7 +26,17 @@ const About = () => {
 			<img src="Bücherausstellung.jpg" alt="Bücherausstellung" width="100%" />
 
 </div>
+<div className="about-title">
+
+
+
+<iframe src="https://player.vimeo.com/video/880506680?" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+
 			
+			
+
+
+</div>
 			</div>
 		
 	);
