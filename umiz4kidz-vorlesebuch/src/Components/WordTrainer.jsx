@@ -136,9 +136,6 @@ function WordTrainer() {
       <div className="grid-container">
         <div className="grid-item">
           <div className="vokabel">
-            <div className="headimage">
-              <img src={image1} alt="" />
-            </div>
             <div className="flags">
               <div className="scene scene--card">
                 <div className={`card ${!isFrontDe1 ? 'is-flipped' : ''}`} onClick={handleFlipDE1}>
@@ -161,13 +158,13 @@ function WordTrainer() {
                 </div>
               </div>
             </div>
+            <div className="headimage">
+              <img src={image1} alt="" />
+            </div>
           </div>
         </div>
         <div className="grid-item">
           <div className="vokabel">
-            <div className="headimage">
-              <img src={image2} alt="Apfel" />
-            </div>
             <div className="flags">
               <div className="scene scene--card">
                 <div className={`card ${!isFrontDe2 ? 'is-flipped' : ''}`} onClick={handleFlipDE2}>
@@ -190,13 +187,13 @@ function WordTrainer() {
                 </div>
               </div>
             </div>
+            <div className="headimage">
+              <img src={image2} alt="Apfel" />
+            </div>
           </div>
         </div>
         <div className="grid-item">
           <div className="vokabel">
-            <div className="headimage">
-              <img src={image3} alt="Apfel" />
-            </div>
             <div className="flags">
               <div className="scene scene--card">
                 <div className={`card ${!isFrontDe3 ? 'is-flipped' : ''}`} onClick={handleFlipDE3}>
@@ -219,13 +216,13 @@ function WordTrainer() {
                 </div>
               </div>
             </div>
+            <div className="headimage">
+              <img src={image3} alt="Apfel" />
+            </div>
           </div>
         </div>
         <div className="grid-item">
           <div className="vokabel">
-            <div className="headimage">
-              <img src={image4} alt="Apfel" />
-            </div>
             <div className="flags">
               <div className="scene scene--card">
                 <div className={`card ${!isFrontDe4 ? 'is-flipped' : ''}`} onClick={handleFlipDE4}>
@@ -248,7 +245,10 @@ function WordTrainer() {
                 </div>
               </div>
             </div>
-          </div>
+            <div className="headimage">
+              <img src={image4} alt="Apfel" />
+            </div>
+            </div>
         </div>
       </div>
       <div className="arrow right-arrow divWithHandCursor" onClick={handleIncrementPage}>
