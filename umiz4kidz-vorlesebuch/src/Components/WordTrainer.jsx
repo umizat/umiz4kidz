@@ -8,6 +8,7 @@ function WordTrainer() {
   const { slug } = useParams();
   let page = vokabeljson[slug];
   const navigate = useNavigate();
+  const delay = 3000;
 
   console.log(slug);
   console.log(page);
@@ -49,6 +50,10 @@ function WordTrainer() {
   const descHu4 = baseUrl + page[4].descriptions[1];
 
 
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
   const handleFlipDE1 = () => {
     audioHu1.pause();
     audioHu1.currentTime = 0;
@@ -56,6 +61,9 @@ function WordTrainer() {
     if (isFrontDe1) {
       audioDe1.play();
     }
+    setTimeout(() => {
+      setIsFrontDe1(true); // This will flip back after the specified delay
+    }, delay);
   };
   const handleFlipDE2 = () => {
     audioHu2.pause();
@@ -64,6 +72,9 @@ function WordTrainer() {
     if (isFrontDe2) {
       audioDe2.play();
     }
+    setTimeout(() => {
+      setIsFrontDe2(true); // This will flip back after the specified delay
+    }, delay);
   };
   const handleFlipDE3 = () => {
     audioHu3.pause();
@@ -72,6 +83,9 @@ function WordTrainer() {
     if (isFrontDe3) {
       audioDe3.play();
     }
+    setTimeout(() => {
+      setIsFrontDe3(true); // This will flip back after the specified delay
+    }, delay);
   };
   const handleFlipDE4 = () => {
     audioHu4.pause();
@@ -80,6 +94,9 @@ function WordTrainer() {
     if (isFrontDe4) {
       audioDe4.play();
     }
+    setTimeout(() => {
+      setIsFrontDe4(true); // This will flip back after the specified delay
+    }, delay);
   };
 
   const handleFlipHU1 = () => {
@@ -89,6 +106,9 @@ function WordTrainer() {
     if (isFrontHu1) {
       audioHu1.play();
     }
+    setTimeout(() => {
+      setIsFrontHu1(true); // This will flip back after the specified delay
+    }, delay);
   };
 
   const handleFlipHU2 = () => {
@@ -98,6 +118,9 @@ function WordTrainer() {
     if (isFrontHu2) {
       audioHu2.play();
     }
+    setTimeout(() => {
+      setIsFrontHu2(true); // This will flip back after the specified delay
+    }, delay);
   };
 
   const handleFlipHU3 = () => {
@@ -107,6 +130,9 @@ function WordTrainer() {
     if (isFrontHu3) {
       audioHu3.play();
     }
+    setTimeout(() => {
+      setIsFrontHu3(true); // This will flip back after the specified delay
+    }, delay);
   };
 
   const handleFlipHU4 = () => {
@@ -116,6 +142,9 @@ function WordTrainer() {
     if (isFrontHu4) {
       audioHu4.play();
     }
+    setTimeout(() => {
+      setIsFrontHu4(true); // This will flip back after the specified delay
+    }, delay);
   };
 
   const handleIncrementPage = () => {
