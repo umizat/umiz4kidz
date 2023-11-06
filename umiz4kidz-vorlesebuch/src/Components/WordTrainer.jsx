@@ -10,11 +10,6 @@ function WordTrainer() {
   const navigate = useNavigate();
   const delay = 3000;
 
-  console.log(slug);
-  console.log(page);
-
-
-
 
   const [isFrontDe1, setIsFrontDe1] = useState(true);
   const [isFrontDe2, setIsFrontDe2] = useState(true);
