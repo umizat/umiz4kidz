@@ -39,8 +39,9 @@ ul {
 }
 
 img {
-	height: 100%;
+	/*weight: 100%;*/
 	object-fit: fill;
+	height: 70%;
 }
 
 /* 
@@ -518,8 +519,10 @@ nav .nav-items {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 50% 50%;
 	gap: 50px;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 .grid-item {

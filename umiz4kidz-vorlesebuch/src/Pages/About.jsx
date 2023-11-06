@@ -30,8 +30,6 @@ const About = () => {
 
 
 
-<iframe src="https://player.vimeo.com/video/880506680?" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
-
 			
 			
 
