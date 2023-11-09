@@ -17,19 +17,21 @@ const NavBar = () => {
 					</div>
 					<ul>
 						<li>
-							<NavLink to="/about">Das Projekt</NavLink>
+							<a href="/about">Das Projekt</a>
 						</li>
 						<li>
-							<NavLink to="/vorlesebuecher">Vorlesebücher</NavLink>
+							<a href="/vorlesebuecher">
+								Vorlesebücher
+							</a>
 						</li>
 						<li>
-							<NavLink to="/mitlesebuecher">Mitlesebücher</NavLink>
+							<a href="/mitlesebuecher">Mitlesebücher</a>
 						</li>
 						<li>
-							<NavLink to="/woerterbuecher">Wörterbücher</NavLink>
+							<a href="/woerterbuecher">Wörterbücher</a>
 						</li>
 						<li>
-							<NavLink to="/vokabeltrainer/1">Vokabeltrainer</NavLink>
+							<a href="/vokabeltrainer/1">Vokabeltrainer</a>
 						</li>
 					</ul>
 				</div>
