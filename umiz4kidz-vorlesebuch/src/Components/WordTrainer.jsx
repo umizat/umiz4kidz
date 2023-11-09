@@ -272,14 +272,14 @@ function WordTrainer() {
             <div className="headimage">
               <img src={image4} alt="Apfel" />
             </div>
-            </div>
+          </div>
         </div>
       </div>
       <div className="arrow right-arrow divWithHandCursor" onClick={handleIncrementPage}>
-        <FaArrowRight style={{ width: '100%', height: '100%' }} />
+        <img src="/images/pfeilrechts.jpg" />
       </div>
       <div className="arrow left-arrow divWithHandCursor" onClick={handleGoBack}>
-        <FaArrowLeft style={{ width: '100%', height: '100%' }} />
+        <img src="/images/pfeillinks.jpg" />
       </div>
     </div>
   );
