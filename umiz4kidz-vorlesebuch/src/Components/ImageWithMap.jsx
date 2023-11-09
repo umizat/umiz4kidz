@@ -5,6 +5,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 
 
+
 const ImageWithMap = ({ vorlesebuch }) => {
 
 	const { slug } = useParams();
@@ -81,6 +82,9 @@ const ImageWithMap = ({ vorlesebuch }) => {
 		daudio.pause();
 		uaudio.pause();
 		kaudio.pause();
+		setPlayingd(false);
+		setPlayingu(false);
+		setPlayingk(false);
 		const nextPage = parseInt(page) + 1;
 		if (nextPage < totalPages) {
 			navigate(`/vorlesebuecher/${slug}/${nextPage}`);
@@ -93,6 +97,9 @@ const ImageWithMap = ({ vorlesebuch }) => {
 		daudio.pause();
 		uaudio.pause();
 		kaudio.pause();
+		setPlayingd(false);
+		setPlayingu(false);
+		setPlayingk(false);
 		navigate(-1);
 	};
 
@@ -137,6 +144,26 @@ const ImageWithMap = ({ vorlesebuch }) => {
 		}
 	}, [playingd, daudio, playingu, uaudio, playingk, kaudio]);
 
+
+
+	useEffect(() => {
+		return () => {
+			console.log("in cleanup")
+			console.log(this);
+			if (daudio) {
+				daudio.pause();
+			}
+			if (uaudio) {
+				uaudio.pause();
+			}
+			if (kaudio) {
+				kaudio.pause();
+			}
+			setPlayingd(false);
+			setPlayingu(false);
+			setPlayingk(false);
+		}
+	}, []);
 
 	return (
 		<div>
