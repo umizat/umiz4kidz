@@ -42,7 +42,7 @@ function App() {
 						</a>
 						<br></br>
 				UMIZ - Ungarisches Medien- und Informationszentrum / Beirat für mehrsprachige Kindergartenpädagogik <br></br>
-7502 Unterwart, Marienplatz 3
+7502 Unterwart, Marienplatz 3 ; 
 www.umiz at - umizmail@gmail.com <br>
 </br>
 
