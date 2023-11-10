@@ -1,102 +1,193 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-const ImageWithMapVB = ({ buch }) => {
-  const { slug } = useParams();
-  const { page } = useParams();
-  const containerRef = useRef(null);
-  const navigate = useNavigate();
+const ImageWithMapVB = ({ vorlesebuch }) => {
 
-  const [audio, setAudio] = useState(new Audio());
-  const [isPlaying, setIsPlaying] = useState(false);
+	const { slug } = useParams();
+	const { page } = useParams();
+	const containerRef = useRef(null);
+	const navigate = useNavigate();
 
-  const baseUrl = 'https://data.umiz4kids.at/readingbooks/';
-  const pagedata = buch[page];
+	let pagedata = vorlesebuch[page];
 
-  useEffect(() => {
-    setAudio(new Audio(baseUrl + slug + '/' + page + '/01.mp3'));
-    setIsPlaying(false);
+	const baseUrl = "https://data.umiz4kids.at/books/";
 
-    // Cleanup function
-    return () => {
-      audio.pause();
-      setIsPlaying(false);
-    };
-  }, [slug, page]);
+	if (pagedata) {
+		console.log("geladen" + pagedata)
+	}
 
-  const handleIncrementPage = () => {
-    const nextPage = parseInt(page) + 1;
-    if (nextPage < Object.keys(buch).length) {
-      audio.pause();
-      setIsPlaying(false);
-      navigate(`/mitlesebuecher/${slug}/${nextPage}`);
-    } else {
-      navigate('/mitlesebuecher');
-    }
-  };
+	/* deutsches audio */
+	const [daudio, setDaudio] = useState(null);
+	const [playingd, setPlayingd] = useState(false);
 
-  const handleGoBack = () => {
-    audio.pause();
-    setIsPlaying(false);
-    navigate(-1);
-  };
+	/* ungarisches audio */
+	const [uaudio, setUaudio] = useState(null);
+	const [playingu, setPlayingu] = useState(false);
 
-  const handleDivClick = (index) => {
-    index = index + 1;
-    if (isPlaying) {
-      if (audio.src.includes(`/0${index}.mp3`)) {
-        // Clicked the same div again, pause the audio
-        audio.pause();
-        setIsPlaying(false);
-        return;
-      } else {
-        // Clicked a different div, pause the current audio
-        audio.pause();
-      }
-    }
-    const newAudio = new Audio(baseUrl + slug + '/' + page + '/0' + index + '.mp3');
-    setAudio(newAudio);
-    setIsPlaying(true);
-    newAudio.autoplay = true;
-    console.log(`Div ${index} clicked`);
-  };
+	/* kroatisches audio */
+	const [kaudio, setKaudio] = useState(null);
+	const [playingk, setPlayingk] = useState(false);
 
-  return (
-    <div>
-      <nav>
-        <div ref={containerRef}>
-          {buch && pagedata && (
-            <div className="outerImageContainer">
-              <div className="imageContainer">
-                <img className="" src={baseUrl + slug + '/' + page + '/' + pagedata.img} alt="" />
-                {buch[page]?.map.map((map, index) => (
-                  <div
-                    className="divWithHandCursor"
-                    onClick={() => handleDivClick(index)}
-                    style={{
-                      position: 'absolute',
-                      left: `${map.left}`,
-                      top: `${map.top}`,
-                      width: `${map.width}`,
-                      height: `${map.height}`,
-                    }}
-                    key={index}
-                  ></div>
-                ))}
-              </div>
-              <div className="arrow right-arrow divWithHandCursor" onClick={handleIncrementPage}>
-								<img src="/images/pfeilrechts.jpg" />
+
+	const dtoggle = () => {
+		if (playingd) {
+			daudio.pause();
+		} else {
+			if (uaudio) uaudio.pause();
+			if (kaudio) kaudio.pause();
+			daudio.play();
+		}
+		setPlayingd(!playingd);
+		setPlayingu(false);
+		setPlayingk(false);
+	};
+
+	const utoggle = () => {
+		if (playingu) {
+			uaudio.pause();
+		} else {
+			if (daudio) daudio.pause();
+			if (kaudio) kaudio.pause();
+			uaudio.play();
+		}
+		setPlayingd(false);
+		setPlayingu(!playingu);
+		setPlayingk(false);
+	};
+
+	const ktoggle = () => {
+		if (playingk) {
+			kaudio.pause();
+		} else {
+			if (daudio) daudio.pause();
+			if (uaudio) uaudio.pause();
+			kaudio.play();
+		}
+		setPlayingd(false);
+		setPlayingu(false);
+		setPlayingk(!playingk);
+	};
+
+
+	const map = vorlesebuch[page]?.['map'];
+
+	const totalPages = Object.keys(vorlesebuch).length;
+
+	const handleIncrementPage = () => {
+		daudio.pause();
+		uaudio.pause();
+		kaudio.pause();
+		setPlayingd(false);
+		setPlayingu(false);
+		setPlayingk(false);
+		const nextPage = parseInt(page) + 1;
+		if (nextPage < totalPages) {
+			navigate(`/vorlesebuecher/${slug}/${nextPage}`);
+		} else {
+			navigate('/vorlesebuecher');
+		}
+	};
+
+	const handleGoBack = () => {
+		daudio.pause();
+		uaudio.pause();
+		kaudio.pause();
+		setPlayingd(false);
+		setPlayingu(false);
+		setPlayingk(false);
+		navigate(-1);
+	};
+
+
+	useEffect(() => {
+		if (pagedata) {
+			console.log(pagedata);
+			setDaudio(new Audio(baseUrl + slug + "/" + pagedata.d));
+			setUaudio(new Audio(baseUrl + slug + "/" + pagedata.u));
+			setKaudio(new Audio(baseUrl + slug + "/" + pagedata.k));
+		}
+	}, [pagedata, slug]
+	);
+
+	useEffect(() => {
+		if (pagedata) {
+			playingd ? daudio.play() : daudio.pause();
+			playingu ? uaudio.play() : uaudio.pause();
+			playingk ? kaudio.play() : kaudio.pause();
+		}
+	}, [playingd, daudio, playingu, uaudio, playingk, kaudio]
+	);
+
+	useEffect(() => {
+		if (daudio) {
+			daudio.addEventListener('ended', () => setPlayingd(false));
+			return () => {
+				daudio.removeEventListener('ended', () => setPlayingd(false));
+			};
+		}
+		if (uaudio) {
+			uaudio.addEventListener('ended', () => setPlayingu(false));
+			return () => {
+				uaudio.removeEventListener('ended', () => setPlayingu(false));
+			};
+		}
+		if (kaudio) {
+			kaudio.addEventListener('ended', () => setPlayingk(false));
+			return () => {
+				kaudio.removeEventListener('ended', () => setPlayingk(false));
+			};
+		}
+	}, [playingd, daudio, playingu, uaudio, playingk, kaudio]);
+
+
+	return (
+		<div>
+			<nav>
+				<div ref={containerRef}>
+					{vorlesebuch && pagedata && (
+						<div className='vbgrid'>
+							<div className="vbgrid-side divWithHandCursor" onClick={handleGoBack}>
+								<span className='arrows'>&lt;</span>
 							</div>
-							<div className="arrow left-arrow divWithHandCursor" onClick={handleGoBack}>
-								<img src="/images/pfeillinks.jpg" />
+							<div className='vbgrid-center'>
+								<img className='vbgrid-center-img' src={baseUrl + slug + "/" + pagedata.img} alt="" />
+								<div className='divWithHandCursor' onClick={dtoggle} style={{
+									position: "absolute",
+									left: `${map[0]['left']}`,
+									top: `${map[0]['top']}`,
+									width: `${map[0]["width"]}`,
+									height: `${map[0]["height"]}`,
+								}}></div>
+								<div className='divWithHandCursor' onClick={utoggle} style={{
+									position: "absolute",
+									left: `${map[1]?.left}`,
+									top: `${map[1]?.top}`,
+									width: `${map[1]?.width}`,
+									height: `${map[1]?.height}`,
+								}}></div>
+								<div className='divWithHandCursor' onClick={ktoggle} style={{
+									position: "absolute",
+									left: `${map[2]?.left}`,
+									top: `${map[2]?.top}`,
+									width: `${map[2]?.width}`,
+									height: `${map[2]?.height}`,
+								}}></div>
 							</div>
-            </div>
-          )}
-        </div>
-      </nav>
-    </div>
-  );
+							<div className="vbgrid-side divWithHandCursor" onClick={handleIncrementPage}>
+								<span className='arrows'>&gt;</span>
+							</div>
+						</div>
+
+					)}
+				</div>
+			</nav>
+		</div>
+	);
+
+
+
+
+
 };
 
 export default ImageWithMapVB;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import ImageWithMapVB from '../Components/ImageWithMapVB';
+import ImageWithMapMB from '../Components/ImageWithMapMB';
 
 const Mitlesebuch = () => {
   const [buch, setMitlesebuch] = useState([]);
@@ -27,7 +27,7 @@ const Mitlesebuch = () => {
 
   return (
     <div className="container">
-      <ImageWithMapVB buch={buch} />
+      <ImageWithMapMB buch={buch} />
     </div>
   );
 };

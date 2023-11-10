@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-const ImageWithMapWB = ({ buch }) => {
+const ImageWithMapMB = ({ buch }) => {
   const { slug } = useParams();
   const { page } = useParams();
   const containerRef = useRef(null);
@@ -11,7 +11,7 @@ const ImageWithMapWB = ({ buch }) => {
   const [audio, setAudio] = useState(new Audio());
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const baseUrl = 'https://data.umiz4kids.at/dictionary/';
+  const baseUrl = 'https://data.umiz4kids.at/readingbooks/';
   const pagedata = buch[page];
 
   useEffect(() => {
@@ -30,9 +30,9 @@ const ImageWithMapWB = ({ buch }) => {
     if (nextPage < Object.keys(buch).length) {
       audio.pause();
       setIsPlaying(false);
-      navigate(`/woerterbuecher/${slug}/${nextPage}`);
+      navigate(`/mitlesebuecher/${slug}/${nextPage}`);
     } else {
-      navigate('/woerterbuecher');
+      navigate('/mitlesebuecher');
     }
   };
 
@@ -99,4 +99,4 @@ const ImageWithMapWB = ({ buch }) => {
   );
 };
 
-export default ImageWithMapWB;
+export default ImageWithMapMB;
