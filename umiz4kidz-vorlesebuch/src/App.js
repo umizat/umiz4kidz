@@ -51,7 +51,7 @@ www.umiz at - umizmail@gmail.com <br>
  <a href="/">Impressum und Datenschutzerklärung
 												</a> 
 <br></br>
-<a href='https://www.bundeskanzleramt.gv.at/themen/volksgruppen.html'>
+<a href='https://www.bundeskanzleramt.gv.at/themen/volksgruppen.html' target='_blank'>
 <img src="https://umiz4kids.at/logo-ministerium.png" alt='Logo-Bundeskanzleramt'  className='bkaFooter'/></a>
 <h5>Gefördert aus Mitteln der Volksgruppenförderung des Bundeskanzleramtes
 </h5>
