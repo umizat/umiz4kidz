@@ -24,10 +24,10 @@ const About = () => {
 				</div>
 				</div>
 				<div className="video">
-			<p>Sehen Sie hier ein Video über unser Bilderbuchkino. 
+			<h5>Sehen Sie hier ein Video über unser Bilderbuchkino. 
 
 
-			</p>
+			</h5>
 				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/mYk7-CRqvDg" frameborder="0" allowfullscreen></iframe>
 
 </div>
