@@ -29,7 +29,12 @@ const About = () => {
 <div className="about-title">
 
 
-
+<a href="https://www.youtube.com/watch?v=mYk7-CRqvDg" target="_blank">
+  <video width="320" height="240" controls>
+    <source src="https://www.youtube.com/watch?v=mYk7-CRqvDg" type="video/mp4">
+    Dein Browser unterstützt das Video-Tag nicht.
+  </video>
+</a>
 			
 			
 

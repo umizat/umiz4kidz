@@ -4,9 +4,10 @@ const Home = () => {
 	return (
 		<div className="container">
 			
-			<h1>Ungarisch und Burgernland-Kroatisch spielerisch kennenlernen</h1>
-			<h2>Magyar és horvát nyelvvel való játékos ismerkedés</h2>
-			<h3>Kroatischer Text</h3>
+
+			<h1>Ungarisch und Burgenland-Kroatisch spielerisch kennenlernen</h1>
+			<h2>Magyar és burgenlandi-horvát nyelvvel való játékos ismerkedés</h2>
+			<h3>Igrajući upoznati madjarski i gradišćanskohrvatski jezik</h3>
 
 
 			
