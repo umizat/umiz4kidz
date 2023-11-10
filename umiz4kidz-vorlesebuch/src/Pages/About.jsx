@@ -10,7 +10,7 @@ const About = () => {
 			
 			
 			<div className="about-container">
-				<div>	<img src="VanderBellen.jpg" alt="Bundespräsident Alexander van der Bellen hat sich unsere Kinderbücher in Oberwart angesehen."/>
+				<div>	<img src="VanderBellen.jpg" alt="Bundespräsident Alexander van der Bellen hat sich unsere Kinderbücher in Oberwart angesehen." width="80%"/>
 		</div>
 		<div>
 				<p>Unsere umiz4kids-Gruppe besteht seit 2010 und beinhaltet Themen rund ums mehrsprachige Burgenland - Veranstaltungen, Bücher, Hörbücher, Bilderbuchkinos und vieles mehr. Herzstück sind unsere deutsch - ungarisch - bgld.kroatischen Kinderbücher, die in Kindergärten, Volksschulen und im privaten Bereich Anwendung finden. 
@@ -20,15 +20,15 @@ const About = () => {
 					Unser Team von umiz4kids möchte Kindern Sprachen spielerisch näherbringen.
 					Mittels Kinderbücher, bunt gestaleteten Wörterbüchern, Workshops und vielen weiteren Veranstaltungen versuchen wir Kinder zu erreichen und sie für die Mehrsprachigkeit zu begeistern.
 				</p>
-				<img src="Bücherausstellung.jpg" alt="Bücherausstellung" /*width="100%"*/ />
+				<img src="Bücherausstellung.jpg" alt="Bücherausstellung" width="100%" />
 				</div>
 				</div>
-				<div className="about-title">
+				<div className="video">
 			<p>Sehen Sie hier ein Video über unser Bilderbuchkino. 
 
 
 			</p>
-				<iframe width="100%" /*height="50%"*/ src="https://www.youtube.com/embed/mYk7-CRqvDg" frameborder="0" allowfullscreen></iframe>
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/mYk7-CRqvDg" frameborder="0" allowfullscreen></iframe>
 
 </div>
 			</div>
