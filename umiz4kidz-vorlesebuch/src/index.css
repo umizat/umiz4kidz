@@ -226,7 +226,7 @@ nav .nav-items {
 .buecher-container .buch-card {
 	background: #fff;
 	border-radius: 10px;
-	padding: 18px;
+	/*padding: 18px;*/
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 	transition: all 0.3s ease-in-out;
 	text-align: center;
