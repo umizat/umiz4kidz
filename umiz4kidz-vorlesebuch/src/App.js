@@ -1,7 +1,8 @@
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './Components/NavBar';
 import Home from './Pages/Home';
+
 
 const About = lazy(() => import('./Pages/About'));
 const ImpDa = lazy(() => import('./Pages/ImpDa'));
@@ -14,6 +15,7 @@ const Mitlesebuch = lazy(() => import('./Pages/Mitlesebuch'));
 const Vokabeltrainer = lazy(() => import('./Pages/Vokabeltrainer'));
 
 const NoMatch = lazy(() => import('./Components/NoMatch'));
+
 
 function App() {
 	return (

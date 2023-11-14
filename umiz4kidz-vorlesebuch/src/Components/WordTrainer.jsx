@@ -9,6 +9,7 @@ function WordTrainer() {
   const navigate = useNavigate();
   const delay = 3000;
 
+  const maxPages = Object.keys(vokabeljson).length;
 
   const [isFrontDe1, setIsFrontDe1] = useState(true);
   const [isFrontDe2, setIsFrontDe2] = useState(true);
@@ -143,7 +144,8 @@ function WordTrainer() {
 
   const handleIncrementPage = () => {
     const nextPage = parseInt(slug) + 1;
-    if (nextPage < Object.keys(vokabeljson).length) {
+    console.log(vokabeljson);
+    if (nextPage < maxPages+1) {
       navigate(`/vokabeltrainer/${nextPage}`);
     } else {
       navigate('/vokabeltrainer/1');

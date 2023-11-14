@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
 
 
-
 * {
 	margin: 0px;
 	padding: 0;
@@ -451,10 +450,11 @@ nav .nav-items {
 }
 
 
-.headimage img {
-	height: 200px;
-}
 
+.headimage img {
+    height: 200px;
+    max-width: 280px;
+}
 
 .grid-container {
 	display: grid;
@@ -509,8 +509,6 @@ nav .nav-items {
 
 .vbgrid-center {
 	position: relative;
-	/* height: calc(100vh - 60px); */
-	/* aspect-ratio: 4/3; */
 }
 
 .vbgrid-center-img {
