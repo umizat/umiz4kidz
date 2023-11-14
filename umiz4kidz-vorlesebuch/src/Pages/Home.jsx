@@ -13,28 +13,28 @@ const Home = () => {
 				<div className="link-div">
 					<Link to="/vorlesebuecher">
 							<img src="vorlesebücher.jpg" alt="Vorlesebücher" />
-							Vorlesebücher
+							<h1>Vorlesebücher</h1>
 					</Link>
 				</div>
 				{/* Second Link and Div */}
 				<div className="link-div">
 					<Link to="/mitlesebuecher">
 							<img src="Mitlesebucher.jpg" alt="Mitlesebücher" />
-							Mitlesebücher
+							<h1>Mitlesebücher</h1>
 					</Link>
 				</div>
 				{/* Third Link and Div */}
 				<div className="link-div">
 					<Link to="/woerterbuecher">
 							<img src="wörterbücher.jpg" alt="Wörterbücher" />
-							Wörterbücher
+							<h1>Wörterbücher</h1>
 					</Link>
 				</div>
 				{/* Fourth Link and Div */}
 				<div className="link-div">
 					<Link to="/vokabeltrainer/1">
 							<img src="vokabeltrainer.jpg" alt="Vokabeltrainer" />
-							Vokabeltrainer
+							<h1>Vokabeltrainer</h1>
 					</Link>
 				</div>
 			</div>
