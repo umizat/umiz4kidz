@@ -1,15 +1,17 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './Components/NavBar';
-import Vokabeltrainer from './Pages/Vokabeltrainer';
-const Home = lazy(() => import('./Pages/Home'));
+import Home from './Pages/Home';
+
 const About = lazy(() => import('./Pages/About'));
+const ImpDa = lazy(() => import('./Pages/ImpDa'));
 const Vorlesebuecher = lazy(() => import('./Pages/Vorlesebuecher'));
 const Woerterbuecher = lazy(() => import('./Pages/Woerterbuecher'));
 const Mitlesebuecher = lazy(() => import('./Pages/Mitlesebuecher'));
 const Vorlesebuch = lazy(() => import('./Pages/Vorlesebuch'));
 const Woerterbuch = lazy(() => import('./Pages/Woerterbuch'));
 const Mitlesebuch = lazy(() => import('./Pages/Mitlesebuch'));
+const Vokabeltrainer = lazy(() => import('./Pages/Vokabeltrainer'));
 
 const NoMatch = lazy(() => import('./Components/NoMatch'));
 
@@ -21,6 +23,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
+					<Route path="/impressumdatenschutz" element={<ImpDa />} />
 					<Route path="/vorlesebuecher" element={<Vorlesebuecher />} />
 					<Route path="/vorlesebuecher/:slug/:page" element={<Vorlesebuch />} />
 					<Route path="/vorlesebuecher/:slug" element={<Vorlesebuch />} />
@@ -48,7 +51,7 @@ www.umiz at - umizmail@gmail.com <br>
 
 
 
- <a href="/">Impressum und Datenschutzerklärung
+ <a href="/impressumdatenschutz">Impressum und Datenschutzerklärung
 												</a> 
 <br></br>
 <a href='https://www.bundeskanzleramt.gv.at/themen/volksgruppen.html' target="_blank">
