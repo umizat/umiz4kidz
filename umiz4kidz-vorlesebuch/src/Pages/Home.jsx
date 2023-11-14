@@ -4,39 +4,6 @@ const Home = () => {
 	return (
 		<div className="container">
 
-			<div class="slideshow">
-  <img src="Mitlesebucher.jpg" alt="Mitlesebucher">
-  <img src="vokabeltrainer.jpg" alt="Vokabeltrainer">
-  <img src="vorlesebücher.jpg" alt="Vorlesebücher">
-  <img src="wörterbücher.jpg" alt="Wörterbücher">
-</div>
-
-<script>
-  // JavaScript-Code für die Slideshow
-  var currentIndex = 0;
-  var slides = document.querySelectorAll('.slideshow img');
-  var totalSlides = slides.length;
-
-  function showSlide(index) {
-    slides.forEach(function (slide) {
-      slide.style.display = 'none';
-    });
-
-    slides[index].style.display = 'block';
-  }
-
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    showSlide(currentIndex);
-  }
-
-  // Starte die Slideshow
-  showSlide(currentIndex);
-
-  // Automatische Weiterleitung alle 3 Sekunden (3000 Millisekunden)
-  setInterval(nextSlide, 3000);
-</script>
-
 
 			<h1>Ungarisch und Burgenland-Kroatisch spielerisch kennenlernen</h1>
 			<h2>Magyar és burgenlandi-horvát nyelvvel való játékos ismerkedés</h2>
