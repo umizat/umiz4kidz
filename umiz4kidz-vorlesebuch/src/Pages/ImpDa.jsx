@@ -51,7 +51,7 @@ const ImpDa = () => {
 					Corporate Design:© UMIZ - Ungarisches Medien- und Informationszentrum
 					<br>
 					</br>
-					Website: Konzept, Design und Umsetzung: Chilicode OG
+					Website: Konzept, Design und Umsetzung: Chilicode OG <a href='https://chilicode.com'>chilicode.com</a>
 					<br>
 					</br>
 					Alle Rechte vorbehalten.
