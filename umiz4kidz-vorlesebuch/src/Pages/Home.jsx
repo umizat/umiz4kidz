@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 var settings = {
 	dots: false,
 	autoplay: true,
@@ -13,7 +12,9 @@ var settings = {
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	pauseOnHover: false,
-
+	arrows: false,
+	autoplaySpeed: 3000,
+	speed: 1000
 };
 
 const Home = () => {

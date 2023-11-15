@@ -528,13 +528,3 @@ nav .nav-items {
     display: block;
     margin: auto;
 }
-
-.slick-prev
-{
-    left: -25px;
-}
-.slick-next
-{
-    left: -25px;
-}
-
