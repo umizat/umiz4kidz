@@ -48,7 +48,7 @@ function App() {
 						<p>
 				UMIZ - Ungarisches Medien- und Informationszentrum / Beirat für mehrsprachige Kindergartenpädagogik <br></br>
 7502 Unterwart, Marienplatz 3 ; 
-www.umiz at - umizmail@gmail.com </p>
+<a href="http://umiz.at">www.umiz at</a> - <a href="mailto:umizmail@gmail.com">umizmail@gmail.com</a></p>
 
 
 
