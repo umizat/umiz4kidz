@@ -31,7 +31,15 @@ p {
 a {
 	text-decoration: none;
 	text-align: center;
+	color: #184B8C;
 
+}
+
+p a {
+	color: #184B8C;
+}
+a:visited {
+	color: #184B8C;
 }
 
 ul {
@@ -528,3 +536,31 @@ nav .nav-items {
     display: block;
     margin: auto;
 }
+
+.legal{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.legal p{
+	text-align: left;
+}
+
+hr {
+	border: none;
+	border-top: 1px dotted #184B8C;;
+	color: #fff;
+	background-color: #fff;
+	height: 10px;
+	margin-top: 10px;
+
+  }
+
+  .legal h4{
+	margin-left: 20px;
+  }
+
+  .legal ul{
+	margin-left: 20px;
+	list-style-type: square;
+  }
