@@ -42,14 +42,13 @@ function App() {
 			</Suspense>
 			<div className='footer'>
 				
-			<a href="/">
+			<a href="http://umiz.at">
 							<img src="https://umiz4kids.at/umizfoto.jpg" alt="UMIZ" className='umizFooter'/>
 						</a>
-						<br></br>
+						<p>
 				UMIZ - Ungarisches Medien- und Informationszentrum / Beirat für mehrsprachige Kindergartenpädagogik <br></br>
 7502 Unterwart, Marienplatz 3 ; 
-www.umiz at - umizmail@gmail.com <br>
-</br>
+www.umiz at - umizmail@gmail.com </p>
 
 
 
