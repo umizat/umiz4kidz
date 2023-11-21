@@ -37,28 +37,25 @@ function App() {
 					<Route path="/mitlesebuecher/:slug/:page" element={<Mitlesebuch />} />
 					<Route path="/vokabeltrainer" element={<Vokabeltrainer />} />
 					<Route path="/vokabeltrainer/:slug" element={<Vokabeltrainer />} />
-				    <Route path="*" element={<NoMatch />} />
+					<Route path="*" element={<NoMatch />} />
 				</Routes>
 			</Suspense>
 			<div className='footer'>
-				
-			<a href="http://umiz.at">
-							<img src="https://umiz4kids.at/umizfoto.jpg" alt="UMIZ" className='umizFooter'/>
-						</a>
-						<p>
-				UMIZ - Ungarisches Medien- und Informationszentrum / Beirat für mehrsprachige Kindergartenpädagogik <br></br>
-				7502 Unterwart, Marienplatz 3 ; www.umiz.at - umizmail@gmail.com<br>
-</br>
+				<a href="http://umiz.at">
+					<img src="https://umiz4kids.at/umizfoto.jpg" alt="UMIZ" className='umizFooter' />
+				</a>
+				<p>
+					UMIZ - Ungarisches Medien- und Informationszentrum / Beirat für mehrsprachige Kindergartenpädagogik <br></br>
+					7502 Unterwart, Marienplatz 3 ; <a href='http://www.umiz.at'>www.umiz.at</a> - <a href='mailto:umizmail@gmail.com'>umizmail@gmail.com</a>
+				</p>
 
 
 
- <a href="/impressumdatenschutz">Impressum und Datenschutzerklärung
-												</a> 
-<br></br>
-<a href='https://www.bundeskanzleramt.gv.at/themen/volksgruppen.html' target="_blank">
-<img src="https://umiz4kids.at/logo-ministerium.png" alt='Logo-Bundeskanzleramt'  className='bkaFooter'/></a>
-<h5>Gefördert aus Mitteln der Volksgruppenförderung des Bundeskanzleramtes
-</h5>
+				<a href="/impressumdatenschutz">Impressum und Datenschutzerklärung</a>
+				<br></br>
+				<a href='https://www.bundeskanzleramt.gv.at/themen/volksgruppen.html' target="_blank">
+					<img src="https://umiz4kids.at/logo-ministerium.png" alt='Logo-Bundeskanzleramt' className='bkaFooter' /></a>
+				<h5>Gefördert aus Mitteln der Volksgruppenförderung des Bundeskanzleramtes</h5>
 			</div>
 		</>
 	);
