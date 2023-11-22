@@ -9,6 +9,9 @@ function WordTrainer() {
   const navigate = useNavigate();
   const delay = 3000;
 
+  let lektion = Math.floor(slug/10) + 1;
+
+
   const maxPages = Object.keys(vokabeljson).length;
 
   const [isFrontDe1, setIsFrontDe1] = useState(true);
@@ -163,6 +166,7 @@ function WordTrainer() {
           <span className='arrows'>&lt;</span>
         </div>
         <div className="vbgrid-center">
+          <h2>Lektion {lektion}:</h2>
           <div className="grid-container">
             <div className="grid-item">
               <div className="vokabel">
