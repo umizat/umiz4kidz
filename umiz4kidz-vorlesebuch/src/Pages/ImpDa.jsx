@@ -15,21 +15,13 @@ const ImpDa = () => {
 				<p>
 					Medieninhaber, Herausgeber und für den Inhalt verantwortlich: UMIZ - Ungarisches Medien- und Informationszentrum<br>
 					</br>
-					Adresse: A-7502 Unterwart, Kirchenallee 4<br>
-					</br>
-					(Postadresse abweichend: A-7502 Unterwart, Marienplatz 3)<br>
+					Adresse: A-7502 Unterwart, Marienplatz 3<br>
 					</br>
 
-					Tel: +43/3352/31287-0 <br>
+					Tel: +43/676 9440777 <br>
 					</br>
-					Fax: +43/3352/31287-14<br>
-					</br>
-
-					E-Mail: <a href='mailto:office@umiz.at'>office@umiz.at</a>, <a href='mailto:umizmail@gmail.com'>umizmail@gmail.com</a><br>
-					</br>
-
-
-					UID:
+					
+					E-Mail: <a href='mailto:office@umiz.at'>office@umiz.at</a>, <a href='mailto:umizmail@gmail.com'>umizmail@gmail.com</a>
 				</p>
 
 				<h6>Unsere AGBs</h6>
