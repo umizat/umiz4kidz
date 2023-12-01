@@ -6,7 +6,7 @@ const About = () => {
 		<div className="container">
 
 
-			<h1>Über UMIZ4KIDS</h1>
+			<h1>Über UMIZ 4 KIDS</h1>
 
 
 			<div className="about-container">
@@ -15,10 +15,14 @@ const About = () => {
 
 				</div>
 				<div>
-					<p>Unsere UMIZ4KIDS-Gruppe wurde im Jahr 2010 gegründet und hat sich die Bewahrung, Pflege und Fortbestand der Mehrsprachigkeit und Kultur im Burgenland zum Ziel gesetzt. Schwerpunkte sind Veranstaltungen, Bücher, Hörbücher, Bilderbuchkinos und vieles mehr. Herzstück sind unsere ungarisch-deutsch-burgenlandkroatischen Kinderbücher (die Themengebiete decken den ganzen Jahreskreis ab), die in Kindergärten, Volksschulen, Bibliotheken und im privaten Bereich Anwendung finden.
+					<p>Unsere UMIZ 4 KIDS - Gruppe wurde im Jahr 2010 gegründet und hat sich die Bewahrung, Pflege und den Fortbestand der Mehrsprachigkeit im Burgenland zum Ziel gesetzt.
+Schwerpunkte sind Veranstaltungen, Bücher, Hörbücher, Bilderbuchkinos und vieles mehr. Herzstück sind unsere ungarisch-deutsch-
+burgenlandkroatischen Kinderbücher, deren Themengebiete den ganzen Jahreskreis abdecken und in Kindergärten, Volksschulen, Bibliotheken sowie im privaten Bereich Anwendung finden.
 					</p>
 					<p>
-					Das UMIZ4KIDS-Team möchte bei den Jüngsten ansetzen und ihnen Sprachen spielerisch näherbringen (auch hiesige Dialekte). Mittels der Kinderbücher, bunt gestalteten Wörterbüchern, interaktiven Bilderbuchkinos, kreativen Workshops und vielen weiteren Veranstaltungen versuchen wir Kinder zu erreichen und für die Mehrsprachigkeit zu begeistern.
+					Das UMIZ 4 KIDS - Team möchte bei den Jüngsten ansetzen und ihnen Sprachen spielerisch näherbringen (auch hiesige Dialekte). Mittels der Kinderbücher,
+bunt gestalteten Wörterbüchern,interaktiven Bilderbuchkinos, kreativen Workshops und vielen weiteren Veranstaltungen versuchen wir Kinder
+zu erreichen und für die Mehrsprachigkeit zu begeistern.
 					</p>
 					<img src="Bücherausstellung.jpg" alt="Bücherausstellung"/>
 				</div>
