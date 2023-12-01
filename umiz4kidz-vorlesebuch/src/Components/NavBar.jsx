@@ -12,7 +12,7 @@ const NavBar = () => {
 
 
 						<a href="/" className="zimu-class">
-							<img src="https://umiz4kids.at/szimu%20klein.jpg" alt="Zimu" /><h4>umiz4kids</h4>
+							<img src="https://umiz4kids.at/szimu%20klein.jpg" alt="Zimu" /><h4>UMIZ4KIDS</h4>
 						</a>
 					</div>
 					<ul>
