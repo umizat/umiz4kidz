@@ -454,6 +454,10 @@ nav .nav-items {
 	backface-visibility: hidden;
 }
 
+.flagimg{
+	height: 60px;
+}
+
 .card__face--back {
 	transform: rotateY(180deg);
 	z-index: 999;
@@ -480,6 +484,7 @@ nav .nav-items {
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	row-gap: 100px;
 }
 
 .grid-item {
