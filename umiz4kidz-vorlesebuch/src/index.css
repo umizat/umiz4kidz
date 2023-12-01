@@ -531,6 +531,7 @@ nav .nav-items {
 
 .vbgrid-center {
 	position: relative;
+	text-align: center;
 }
 
 .vbgrid-center-img {
@@ -538,7 +539,7 @@ nav .nav-items {
 }
 
 .vbgrid-center img {
-	max-height: 90%;
+	max-height: 75%;
 }
 
 .arrows {
