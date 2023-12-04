@@ -588,3 +588,33 @@ hr {
 	margin-top: 5px;
 	font-size: 13px;
 }
+
+/* Add this to your existing CSS styles */
+.burger-icon {
+	display: none; /* Hide burger icon on larger screens */
+	cursor: pointer;
+  }
+  
+  .menu-open {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+	/* Show burger icon on smaller screens */
+	.burger-icon {
+	  display: block;
+	}
+  
+	/* Hide the menu on smaller screens by default */
+	.nav-items ul {
+	  display: none;
+	}
+  
+	/* Show the menu when the burger icon is clicked */
+	.nav-items ul.menu-open {
+	  display: flex;
+	  flex-direction: column;
+	}
+  }
+  
