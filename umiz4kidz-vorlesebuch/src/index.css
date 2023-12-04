@@ -91,7 +91,7 @@ nav {
 	color: #184B8C;
 	font-size: 40px;
 	height: 90px;
-	width: 235px;
+	width: 260px;
 
 }
 
@@ -593,6 +593,7 @@ hr {
 .burger-icon {
 	display: none; /* Hide burger icon on larger screens */
 	cursor: pointer;
+	font-size: 30px;
   }
   
   .menu-open {
