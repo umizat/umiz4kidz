@@ -537,6 +537,7 @@ nav .nav-items {
 .vbgrid-center {
 	position: relative;
 	text-align: center;
+	margin: auto;
 }
 
 .vbgrid-center-img {
@@ -588,6 +589,11 @@ hr {
 	margin-top: 5px;
 	font-size: 13px;
 }
+
+.surroudingDiv{
+	border-color: #B20000;
+}
+
 
 /* Add this to your existing CSS styles */
 .burger-icon {
