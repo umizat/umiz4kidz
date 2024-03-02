@@ -361,7 +361,7 @@ nav .nav-items {
 
 .divWithHandCursor {
 	cursor: pointer;
-	background-color: rgba(188, 223, 14, 0.05);
+	/* background-color: rgba(188, 223, 14, 0.05); */
 }
 
 
