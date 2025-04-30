@@ -207,6 +207,13 @@ nav .nav-items {
 	color: #B20000;
 }
 
+.audio-notice {
+  text-align: center;
+  color: #184B8C;
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: bold;
+}
 
 .banner {
 	font-size: 50px;

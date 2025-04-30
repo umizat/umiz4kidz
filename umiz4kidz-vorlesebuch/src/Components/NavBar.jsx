@@ -18,6 +18,9 @@ const NavBar = () => {
               <h4>UMIZ 4 KIDS</h4>
             </a>
           </div>
+          <div className="audio-notice">
+            Lautsprecher bitte einschalten! / Kérjük kapcsolja be a hangszórót!
+          </div>
           <div className="burger-icon" onClick={toggleMenu}>
             {/* You can use an SVG icon or a Unicode character for the burger icon */}
             &#9776;
